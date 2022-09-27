@@ -24,7 +24,7 @@ Cara mengakases CLI di laptop atau PC dengan sistem operasi windows dapat meneka
 
 ![image.png]( gambar1/xxxx.png)
 
-**File System Structure**
+##### File System Structure
 FIle System adalah struktur logika yang digunakan untuk mengendalikan akses terhadap data yang ada pada harddisk
 - Sebuah filesystem mengatur bagaimana data disimpan di dalam sebuah system
 - Sistem operasi Windows & Unix-like menyusun file dan direktori menggunakan struktur yang bentuknya mirip tree
@@ -42,6 +42,7 @@ FIle System adalah struktur logika yang digunakan untuk mengendalikan akses terh
 | cp |menyalin file & direktori  |
 | mv |untuk memindahkan atau me-rename file dan direktori   |
 | rm|untuk menghapus file & direktori  |
+
 ## Git & GitHub
 
 ##### Kenapa Git dan Github tools yang wajib digunakan?
@@ -80,7 +81,6 @@ sebelumnya download aplikasi git seperti aplikasi biasa. dilanjutkan membuat aku
 -  **git log**, berfungsi untuk melihat riwayat tindakan yang telah dieksekusi
 
 
-
 ## HTML
 HTML adalah singkatan dari Hypertext Markup Language. HTML digunakan untuk menampilkan konten pada browser. Contoh konten yang dapat ditampilkan seperti Text, Image, Video, Link, dan masih banyak lainnya.
 
@@ -104,34 +104,31 @@ HTML adalah singkatan dari Hypertext Markup Language. HTML digunakan untuk menam
 </body>
 </html>
 ```
-**Html Element**
-
+##### Html Element
 HTML element didefinisikan dengan 
 - opening tag ```<h1>```
 - content ```Judul```
 - closing tag```</h1>```
 
-
-##### Html Atribut
+**Html Atribut**
 Attribute adalah properties dari sebuah HTML Element.
 contohnya : didalam tag ```<h1> ``` kita tambahkan atribut ```id```, seperti code dibawah
-
 ```<h1 id="Header">Judul</h1>```
 
 
-#### Tags
-
+**Tags**
 |Tag | Fungsinya |
 | ------ | ------ |
-| <p> | Membuat Pragraph |
-| <h1> | Membuat Heading (h1-h9) |
-| <img> | Menyisipkan gambar |
-| <a>| untuk menentukan apakah link yang dituju terbuka di jendela browser saat ini, atau terbuka di jendela baru |
-| <ol>| mengurutkan konten berdasarkan penomoran otomatis |
-| <hr> | untuk memisahkan beberapa konten atau paragraf, membuat garis lurus secara horizontal|
-| <form> | Menambahkan form|
-| <Table> | Menyisipkan Tabel|
+| p | Membuat Pragraph |
+| h1 | Membuat Heading (h1-h9) |
+| img | Menyisipkan gambar |
+| a| untuk menentukan apakah link yang dituju terbuka di jendela browser saat ini, atau terbuka di jendela baru |
+| ol| mengurutkan konten berdasarkan penomoran otomatis |
+| hr | untuk memisahkan beberapa konten atau paragraf, membuat garis lurus secara horizontal|
+| for> | Menambahkan form|
+| Table | Menyisipkan Tabel|
 
+**Membuat Tabel sederhana**
 ``` <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,7 +155,8 @@ contohnya : didalam tag ```<h1> ``` kita tambahkan atribut ```id```, seperti cod
     </table>
    
 </body>
-</html>```
+</html>
+```
 
 #### Semantic Html
 Semantic artinya kita menggunakan element html yang sesuai dengan kebutuhan konten
