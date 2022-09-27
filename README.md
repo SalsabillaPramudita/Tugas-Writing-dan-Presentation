@@ -21,7 +21,7 @@ Materi :
 ##### Command Line Interface(CLI)
 **CLI** adalah mekanisme interaksi dengan sistem operasi atau perangkat lunak komputer dengan mengetikkan perintah untuk menjalankan tugas tertentu
 Cara mengakases CLI di laptop atau PC dengan sistem operasi windows dapat menekan win+R, lalu mengetikkan "cmd"
-![image.png]( {https://user-images.githubusercontent.com/110925630/192481316-4f1459ff-0ebb-4e5e-8bf1-14eccc899f6d.png})
+![image.png]( gambar1/xxxx.png)
 
 
 Markdown is a lightweight markup language based on the formatting conventions
