@@ -24,7 +24,7 @@ Cara mengakases CLI di laptop atau PC dengan sistem operasi windows dapat meneka
 
 ![image.png]( gambar1/xxxx.png)
 
-##### File System Structure
+**File System Structure**
 FIle System adalah struktur logika yang digunakan untuk mengendalikan akses terhadap data yang ada pada harddisk
 - Sebuah filesystem mengatur bagaimana data disimpan di dalam sebuah system
 - Sistem operasi Windows & Unix-like menyusun file dan direktori menggunakan struktur yang bentuknya mirip tree
