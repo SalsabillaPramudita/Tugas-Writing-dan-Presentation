@@ -72,4 +72,4 @@ sebelumnya download aplikasi git seperti aplikasi biasa. dilanjutkan membuat aku
 ###### Repository
 - **git init namaproyek**, syntak disamping berfungsi untuk membuat repository baru.
 - **git init.**, gunakan syntax ini jikalau nama folder sudah ada sebelumnya
-![image.png]( gambar1/kondisi file di git.jpg)
+![image.png]( gambar1/KondisiFileGit.jpg)
