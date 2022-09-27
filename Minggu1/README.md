@@ -81,3 +81,109 @@ sebelumnya download aplikasi git seperti aplikasi biasa. dilanjutkan membuat aku
 
 
 
+## HTML
+HTML adalah singkatan dari Hypertext Markup Language. HTML digunakan untuk menampilkan konten pada browser. Contoh konten yang dapat ditampilkan seperti Text, Image, Video, Link, dan masih banyak lainnya.
+
+**Tools yang dibutuhkan untuk membuat HTML**
+- **Browser**
+- **Code Editor**, disini saya install Virtual Studio Code 
+''' Visual Code Studio merupakan paket all in one. Kita bisa menggunakan ini untuk bahasa pemrograman apapun. Nah ada satu fitur yang disediakan oleh si VsCode ini yaitu Live Server yang mana kita tidak perlu merefresh halaman browser terhadap perubahan'''
+
+**Struktur Html**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Pertamaku</title>
+</head>
+<body>
+    Hello saya salsa
+</body>
+</html>
+```
+**Html Element**
+
+HTML element didefinisikan dengan 
+- opening tag ```<h1>```
+- content ```Judul```
+- closing tag```</h1>```
+
+
+##### Html Atribut
+Attribute adalah properties dari sebuah HTML Element.
+contohnya : didalam tag ```<h1> ``` kita tambahkan atribut ```id```, seperti code dibawah
+```<h1 id="Header">Judul</h1>```
+
+#### Tags
+
+|Tag | Fungsinya |
+| ------ | ------ |
+| <p> | Membuat Pragraph |
+| <h1> | Membuat Heading (h1-h9) |
+| <img> | Menyisipkan gambar |
+| <a>| untuk menentukan apakah link yang dituju terbuka di jendela browser saat ini, atau terbuka di jendela baru |
+| <ol>| mengurutkan konten berdasarkan penomoran otomatis |
+| <hr> | untuk memisahkan beberapa konten atau paragraf, membuat garis lurus secara horizontal|
+| <form> | Menambahkan form|
+| <Table> | Menyisipkan Tabel|
+
+  **Contoh membuat Tabel**
+  ```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Pertamaku</title>
+</head>
+<body>
+    Hello saya salsa<br>
+    <table border="2">
+        <thead>
+            <tr>
+                <td>Nama</td>
+                <td>Umur</td>
+            </tr>    
+            <tbody>
+                <tr>
+                    <td>Salsa</td>
+                    <td>19</td>
+
+
+                </tr>
+            </tbody>
+
+        </thead>
+
+    </table>
+   
+</body>
+</html>
+
+#### Semantic Html
+Semantic artinya kita menggunakan element html yang sesuai dengan kebutuhan konten
+Apa kegunaan lain semantic HTML?
+
+Meningkatkan Accessibility 
+Meningkatkan SEO 
+Lebih mudah di maintain
+
+**Beberapa semantic tag yang dibawa oleh HTML5 adalah sebagai berikut:**
+
+<article>
+<aside>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+
