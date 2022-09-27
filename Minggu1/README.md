@@ -71,5 +71,13 @@ sebelumnya download aplikasi git seperti aplikasi biasa. dilanjutkan membuat aku
 
 ###### Repository
 - **git init namaproyek**, syntak disamping berfungsi untuk membuat repository baru.
-- **git init.**, gunakan syntax ini jikalau nama folder sudah ada sebelumnya
-![image.png]( gambar1/KondisiFileGit.jpg)
+- **git init .**, gunakan syntax ini jikalau nama folder sudah ada sebelumnya
+- **git status**, digunakan untuk menlihat terjadinya perubahan atau tidak dalam folder kita
+-  **git add namafile**, syntax ini untuk menambahkan file kedalam folder.
+-  **git add .**, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
+-  **git commit**, Lakukan ‘git commit’ untuk save perubahan pada version control
+-  **git push -u origin master** digunakan untuk mengirimkan/perubahan file ke remote repository
+-  **git log**, berfungsi untuk melihat riwayat tindakan yang telah dieksekusi
+
+
+
