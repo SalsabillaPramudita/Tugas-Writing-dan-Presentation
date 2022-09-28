@@ -11,7 +11,7 @@ Materi :
 - HTML
 - CSS
 - Algoritma
-- JavaScript (JS dasar & Js Conditional)
+- JavaScript (JS dasar, Js Conditional, Js Looping)
 
 
 ## Unix Command Line
