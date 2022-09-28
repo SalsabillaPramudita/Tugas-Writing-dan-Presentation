@@ -509,3 +509,21 @@ switch(remotAc){
 
 }//otput : "turunkan suhu AC"
 ```
+## Looping
+Looping adalah statement yang mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi stop/berhenti tercapai.
+
+** For Loop**
+FOR LOOP merupakan instruksi pengulangan yang dapat kita berikan pada program yang kita kembangkan.
+Gunakan FOR LOOP jika kita tahu seberapa banyak nilai pasti untuk pengulangannya
+CONTOH:
+Jika kita ingin menampilkan angka 1 - 100 kita menggunakan FOR LOOP.
+
+Karena kita sudah tahu bahwa pengulangan akan dilakukan sebanyak 100kali
+```
+let angka =1;
+for(angka; angka<=10; angka++){
+    console.log(angka);
+}
+```
+
+
