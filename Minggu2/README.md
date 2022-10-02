@@ -377,11 +377,51 @@ file html
 app.innerHTML = "<h1>Hallo</h1>"
 ```
 - membuat element
---  menambahkan child kedalam parent
--- append vs appendChild
+```
+let p = document.createElement("p")
+p.innerText = "ini adalah paragraf"
+```
+    -  menambahkan child kedalam parent
+    ```
+    app.append(p)
+    ```
+    - append vs appendChild
+    ```
+    app.append("menggunakan append")
+    ```
+    appenchild tidak bisa input data string
 - remove element
+ ```
+ let end = document.getElementById("end")
+end.remove()
+
+let link = document.getElementsByClassName("link")[0]
+ ```
 - attribute
+```
+console.log(link.attributes) // [] list attribute
+console.log(link.getAttribute("href")); // ambil isi attribute
+link.setAttribute("id", "google") // add attribute
+```
 - memberikan style
+```
+link.style.color = "black"
+link.style.border = "1px solid black"
+link.style.padding = "5px 20px"
+link.style.backgroundColor = "aqua"
+link.style.removeProperty("border") // menghapus style property
+```
 - mendapatkan style dari element
+```
+let tess = document.getElementById("tess")
+let tessStyle = getComputedStyle(tess)
+console.log(tessStyle.height)
+```
 - class
+```
+let container = document.getElementsByClassName("container")[0]
+console.log(container.classList); // [] list of class
+container.classList.add("home") // menambahnkan class
+container.classList.remove("container") // menghapus class
+```
 
