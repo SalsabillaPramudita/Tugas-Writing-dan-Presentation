@@ -249,6 +249,8 @@ Apa itu DOM?
 
 Document Object Model atau DOM BUKAN bagian dari javascript, melainkan DOM adalah sebuah API untuk membangun website yang bisa dipakai oleh semua bahasa pemograman
 
+**DOM dalam bentuk tree struktur**
+![image.png]( gambar/dom-2.png)
 
 #### Traversing
 
