@@ -244,5 +244,7 @@ console.log("selamat datang".reverse())
 
 ### Day 3 DOM Introduction dan Traversing Element
 
+![image.png]( gambar/dom-1.PNG)
+
 
 
