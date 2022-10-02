@@ -75,4 +75,7 @@ cariAngka(3)
 cariAngka(23)
 ```
 **output**
-![img](gambar/OutputContohKasus.PNG])
+
+![image.PNG](gambar/OutputContohKasus.PNG)
+
+dari output yang dikeluuarkan dari codingan kasus yang kita buat dapat dilihat bahwa angka 14 dan 3 output nya "yes ketemu", sementara angka 23 outputnya "data tidak ditemukan". Mengapa demikian?, Karena di codingan kita membuat batas loopingnya(isKetemu)adalah 20, yang artinya perulangan akan berhenti diangka 20, dan maka dari itu angka 23 tidak dapat ditemukan ini diperoleh karna kita memberikan else pada kodingan.
