@@ -333,5 +333,55 @@ console.log(itemQuery.nextElementSibling);
 ```
 
 ### Day 4 DOM Manipulating Elements dan Manipulating Styles
+file html
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+    <title>Document salsa</title>
 
+    <style>
+      #tess {
+        width: 100px;
+        height: 20px;
+        background-color: brown;
+      }
+
+      p {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tess"></div>
+
+    <div id="app"></div>
+
+    <div id="end">
+    </div>
+    
+    <div class="container">
+      <a href="google.com" class="link">Google</a>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+```
+- memberikan konten
+```
+app.innerHTML = "<h1>Hallo</h1>"
+```
+- membuat element
+--  menambahkan child kedalam parent
+-- append vs appendChild
+- remove element
+- attribute
+- memberikan style
+- mendapatkan style dari element
+- class
 
