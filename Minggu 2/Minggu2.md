@@ -11,4 +11,4 @@ Materi :
 
 ### Day 1 Javascript Function
 Function adalah sebuah blok kode dalam sebuah grup untuk menyelesaikan 1 task/1 fitur. Saat kita membutuhkan fitur tersebut nantinya, kita bisa kembali menggunakannya.
-![img][/strukur-fungsi.png]
+![image.png]( gambar/struktur fungsi.png)
