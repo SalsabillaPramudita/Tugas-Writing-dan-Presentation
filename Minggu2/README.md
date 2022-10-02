@@ -282,20 +282,19 @@ disaat kita akses dom, kita dapat 4 hasil
 </body>
 </html>
 ```
-
-```
 **get-family**
-let title = document.getElementById("title")
+```
+let title = document.getElementById("title")//Memanggil tag HTML berdasarkan ID
 console.log(title)
 
-let items = document.getElementsByClassName("item")
+let items = document.getElementsByClassName("item")//Memanggil tag HTML berdasarkan class
 console.log(items[2]);
 
-let list = document.getElementsByClassName("list")
+let list = document.getElementsByClassName("list")//Memanggil tag HTML berdasarkan class
 console.log(list[0])
 console.log(list[0].children)
 
-let itemByTag = document.getElementsByTagName("li")
+let itemByTag = document.getElementsByTagName("li")//Memanggil tag HTML berdasarkan nama tag
 console.log(itemByTag[1])
 console.log(itemByTag.item(1))
 console.log(itemByTag.length)
