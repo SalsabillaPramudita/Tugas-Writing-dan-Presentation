@@ -242,6 +242,7 @@ console.log("selamat datang".reverse())
 // console.log(reverse("hallo"));
 ```
 
-### Day 3 
+### Day 3 DOM Introduction dan Traversing Element
+
 
 
