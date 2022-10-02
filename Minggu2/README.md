@@ -98,3 +98,6 @@ function nama(a){
 }
 nama("Salsa")
 ```
+**output**
+
+![image.PNG](gambar/OutputContohKasus2.PNG)
