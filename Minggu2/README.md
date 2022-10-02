@@ -1,6 +1,6 @@
 # Summary
 ```
-Minggu 1 Coding Bootcamp
+Minggu 1 Web Development
 Nama  : Salsabilla Pramudita
 Track : FrontEnd Web Development
 ```
@@ -11,3 +11,5 @@ Materi :
 
 ### Day 1 Javascript Function
 Function adalah sebuah blok kode dalam sebuah grup untuk menyelesaikan 1 task/1 fitur. Saat kita membutuhkan fitur tersebut nantinya, kita bisa kembali menggunakannya.
+
+![img](Minggu-2/gambar/struktur-fungsi.png])
