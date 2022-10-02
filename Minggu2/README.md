@@ -255,7 +255,18 @@ Document Object Model atau DOM BUKAN bagian dari javascript, melainkan DOM adala
 disaat kita akses dom, kita dapat 4 hasil
 ![image.png]( gambar/dom-3.png)
 
-**Cara mengakses DOM**
+
+**Traversing**
+
+Apa itu Traversing?
+
+Traversing adalah mencari suatu elemen HTML berdasarkan hubungan (relation) dengan elemen HTML lainnya
+
+Jenis Traversing
+![image.png]( gambar/dom-4.png)
+
+**Traversing Kebawah**/
+file index.html
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -300,13 +311,25 @@ console.log(itemByTag.item(1))
 console.log(itemByTag.length)
 ```
 
-**Traversing**
+**Query Selector**
+```
+let listQuery = document.querySelector(".list")
+console.log(listQuery);
 
-Apa itu Traversing?
+let itemQueryAll = document.querySelectorAll(".item")
+console.log(itemQueryAll)
+```
 
-Traversing adalah mencari suatu elemen HTML berdasarkan hubungan (relation) dengan elemen HTML lainnya
+**Traversing KeAtas**
+```
+console.log(itemQuery.parentElement);
+console.log(itemQuery.closest(".list"));
+```
 
-Jenis Traversing
-![image.png]( gambar/dom-4.png)
+**Traversing Ke Samping**
+```
+console.log(itemQuery.previousElementSiblingc);
+console.log(itemQuery.nextElementSibling);
+```
 
 
