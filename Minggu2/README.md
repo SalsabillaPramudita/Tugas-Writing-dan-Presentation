@@ -114,7 +114,7 @@ Tipe data Non Primitiv
 - Array
 - Object
 - 
-**Method String**
+#### **Method String**
 - typeOf()
 fungsinya untuk  menunjukkan tipe data dari syntax yang kita buat
 ```
@@ -143,10 +143,105 @@ let hewan = "sApI"
 console.log(hewan.charAt(1))//output: A
 ```
 bisa dilihat pada codingan diatas, ouputnya adalah A, karena charArt akan mengambil nilai dari huruf tersebut berdasarkan inputan yanga da di dalam kurungnya si charArt, sama seperti array, dihiung dari 0.
-- split()
+- split()\
 Split digunakan untuk membagi string menjadi array substring dan mengembalikan array baru tanpa mengubah string asli
-``
+```
 let kalimat="dengan split kita dapat memngubah kalimat ke dalam bentuk array"
 console.log("before ", kalimat);
 console.log("after",kalimat.split(" "))
 ```
+
+**output**
+
+![image.PNG](gambar/OutputContohKasus3.PNG)
+
+#### **Method Number**
+- Number()
+```
+console.log(Number("123")); //output : 123
+```
+- isNaN()
+
+isNan() merupakan sebuah function yang menguji apakah nilai dari parameter expression itu adalah bukan angka
+```
+console.log(isNaN(2131)) // false
+console.log(isNaN("dawdf")) // true
+```
+dari output kita dapat melihat bahwa 2131 hasilnya false, dikarenakan method isNaN ini mengecek apakah expression itu adalah angka, nah disini expression tersebut adalah angka maka hasilnya false.\
+- toFixed()
+
+Method toFixed digunakan untuk membuat tampilan angka dengan jumlah desimal yang tetap
+```
+let angka = 3.12345
+console.log(angka.toFixed(1)) // 3.1
+console.log(angka.toFixed(2)) // 3.12
+```
+
+#### **Method Math**
+- abs()
+
+berfungsi untuk menghasilkan nilai absolut atau nilai positif dari nilai negatif yang di tentukan didalam argumen angka didalam fungsi tersebut
+```
+console.log(Math.abs(-5)) // 5
+```
+- ceil()
+
+digunakan untuk membulatkan bilangan desimal keatas
+```
+console.log(Math.ceil(5.2)) // 6
+```
+- floor()
+
+untuk mengembalikan nilai menjadi bilangan bulat dari yang terbesar kurang dari atau sama dengan
+```
+console.log(Math.floor(5.6)) // 5
+```
+- round()
+
+digunakan untuk membulatkan bilangan desimal ke bilangan terdekat, fungsi tersebut membutuhkan 1 argumen yang ingin dibulatkan
+```
+console.log(Math.round(5.6)) // 6
+console.log(Math.round(5.2)) // 5
+```
+- random()
+
+memberikan nilai acak
+```
+console.log(Math.random()) // 0.123342
+```
+#### Method Date
+```
+console.log(Date()) // 'Tue Sep 27 2022 20:31:20 GMT+0700 (Indochina Time)'
+console.log(Date.now()) // 1664285495449
+```
+
+#### Prototype
+- reverse()\
+reverse() merupakan method array di JavaScript yang berfungsi untuk membalikkan urutan array, elemen pertama jadi terakhir dan elemen terakhir jadi yang pertama.
+
+**contoh kasus**
+
+```
+// hallo -> ollah
+
+// membuat method baru utk tipe data string
+String.prototype.reverse = function(){
+  let s = ""
+  for (let i = String(this).length-1; i >= 0 ; i--) {
+    s = s + String(this)[i]
+  }
+
+  return s
+}
+
+// method yg dimiliki oleh string
+console.log("hallo".reverse())
+console.log("selamat datang".reverse())
+
+// function dgn argumen string
+// console.log(reverse("hallo"));
+```
+
+### Day 3 
+
+
