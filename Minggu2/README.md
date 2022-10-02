@@ -332,4 +332,6 @@ console.log(itemQuery.previousElementSiblingc);
 console.log(itemQuery.nextElementSibling);
 ```
 
+### Day 4 DOM Manipulating Elements dan Manipulating Styles
+
 
