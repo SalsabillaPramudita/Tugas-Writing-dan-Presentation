@@ -101,3 +101,46 @@ nama("Salsa")
 **output**
 
 ![image.PNG](gambar/OutputContohKasus2.PNG)
+### Day 2 Data Type Built in Prototype & Method
+**Method**
+Method dapat menerima argumen sebagai nilai masukan yang akan diproses di dalam method bersangkutan. Method dapat kita gunakan (panggil) berulang-ulang dari mana saja dalam program kita.
+
+Tipe data Primitiv
+- String
+- Number
+- Boolean
+
+Tipe data Non Primitiv
+- Array
+- Object
+- 
+**Method String**
+- typeOf()
+fungsinya untuk  menunjukkan tipe data dari syntax yang kita buat
+```
+let hewan = "sApI"
+
+console.log(typeof hewan))// output : string
+```
+dari codingan diatas dapat dilihat outputnya adalah string,yang mana variabel hewan tipe datanya adalah string
+- toUpperCase()
+fungsinya untuk menjadikan isi variabel menjadi huruf kapital.
+
+```
+let hewan = "sApI"
+console.log(hewan.toUpperCase()); output: SAPI
+```
+- toLowerCase()
+fungsinya untuk menjadikan isi variabel menjadi huruf kecil.
+```
+let hewan = "sApI"
+console.log(hewan.toLowerCase());
+```
+- charAt()
+fungsinya mirip seperti array.
+```
+let hewan = "sApI"
+console.log(hewan.charAt(1))//output: A
+```
+bisa dilihat pada codingan diatas, ouputnya adalah A, karena charArt akan mengambil nilai dari huruf tersebut berdasarkan inputan yanga da di dalam kurungnya si charArt, sama seperti array, dihiung dari 0.
+
