@@ -252,5 +252,13 @@ Document Object Model atau DOM BUKAN bagian dari javascript, melainkan DOM adala
 **DOM dalam bentuk tree struktur**
 ![image.png]( gambar/dom-2.png)
 
+disaat kita akses dom, kita dapat 4 hasil
+![image.png]( gambar/dom-3.png)
+
 #### Traversing
+Apa itu Traversing 
+
+
+![image.png]( gambar/dom-4.png)
+
 
