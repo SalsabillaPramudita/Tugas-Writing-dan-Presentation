@@ -1,6 +1,6 @@
 # Summary
 ```
-Minggu 1 Coding Bootcamp
+Minggu 1 Web Development
 Nama  : Salsabilla Pramudita
 Track : FrontEnd Web Development
 ```
