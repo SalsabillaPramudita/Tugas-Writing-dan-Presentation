@@ -425,3 +425,5 @@ container.classList.add("home") // menambahnkan class
 container.classList.remove("container") // menghapus class
 ```
 
+### Day 5 DOM Events dan DOM Forms
+
