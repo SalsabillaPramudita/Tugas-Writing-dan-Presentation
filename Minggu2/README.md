@@ -243,8 +243,12 @@ console.log("selamat datang".reverse())
 ```
 
 ### Day 3 DOM Introduction dan Traversing Element
+Apa itu DOM?
 
-![image.png]( gambar/dom-1.Png)
+![image.png]( gambar/dom-1.png)
+
+Document Object Model atau DOM BUKAN bagian dari javascript, melainkan DOM adalah sebuah API untuk membangun website yang bisa dipakai oleh semua bahasa pemograman
 
 
+#### Traversing
 
