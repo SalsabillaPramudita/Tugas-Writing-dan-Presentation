@@ -75,4 +75,4 @@ cariAngka(3)
 cariAngka(23)
 ```
 **output**
-
+![img](gambar/OutputContohKasus.PNG])
