@@ -255,10 +255,59 @@ Document Object Model atau DOM BUKAN bagian dari javascript, melainkan DOM adala
 disaat kita akses dom, kita dapat 4 hasil
 ![image.png]( gambar/dom-3.png)
 
-#### Traversing
-Apa itu Traversing 
+**Cara mengakses DOM**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 onclick="alert('selamat datang')">halo</h1>
 
+    <h1 id="title">Hallo</h1>
 
+    <ul class="list">
+      <li class="item">satu</li>
+      <li class="item">dua</li>
+      <li class="item">tiga</li>
+    </ul>
+
+    <p id="paragraf">Click</p>
+    <button id="btn">submit</button>
+</body>
+</html>
+```
+
+```
+**get-family**
+let title = document.getElementById("title")
+console.log(title)
+
+let items = document.getElementsByClassName("item")
+console.log(items[2]);
+
+let list = document.getElementsByClassName("list")
+console.log(list[0])
+console.log(list[0].children)
+
+let itemByTag = document.getElementsByTagName("li")
+console.log(itemByTag[1])
+console.log(itemByTag.item(1))
+console.log(itemByTag.length)
+```
+
+**Traversing**
+
+Apa itu Traversing?
+
+Traversing adalah mencari suatu elemen HTML berdasarkan hubungan (relation) dengan elemen HTML lainnya
+
+Jenis Traversing
 ![image.png]( gambar/dom-4.png)
 
 
