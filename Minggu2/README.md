@@ -89,7 +89,7 @@ cariAngka(23)
 
 ![image.PNG](gambar/OutputContohKasus.PNG)
 
-dari output yang dikeluuarkan dari codingan kasus yang kita buat dapat dilihat bahwa angka 14 dan 3 output nya "yes ketemu", sementara angka 23 outputnya "data tidak ditemukan". Mengapa demikian?, Karena di codingan kita membuat batas loopingnya(isKetemu)adalah 20, yang artinya perulangan akan berhenti diangka 20, dan maka dari itu angka 23 tidak dapat ditemukan ini diperoleh karna kita memberikan else pada kodingan.
+dari output yang dikeluuarkan dari codingan kasus yang kita buat dapat dilihat bahwa angka 14 dan 3 output nya "yes ketemu", sementara angka 23 outputnya "data tidak ditemukan". Mengapa demikian?, Karena di codingan kita membuat batas loopingnya(isKetemu)adalah 20, yang artinya perulangan akan berhenti diangka 20, dan maka dari itu angka 23 tidak dapat ditemukan ini diperoleh karna kita memberikan else pada kodingan.\
 **Contoh Kasus**
 ```
 function nama(a){
@@ -143,4 +143,10 @@ let hewan = "sApI"
 console.log(hewan.charAt(1))//output: A
 ```
 bisa dilihat pada codingan diatas, ouputnya adalah A, karena charArt akan mengambil nilai dari huruf tersebut berdasarkan inputan yanga da di dalam kurungnya si charArt, sama seperti array, dihiung dari 0.
-
+- split()
+Split digunakan untuk membagi string menjadi array substring dan mengembalikan array baru tanpa mengubah string asli
+``
+let kalimat="dengan split kita dapat memngubah kalimat ke dalam bentuk array"
+console.log("before ", kalimat);
+console.log("after",kalimat.split(" "))
+```
