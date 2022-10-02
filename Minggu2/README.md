@@ -5,11 +5,22 @@ Nama  : Salsabilla Pramudita
 Track : FrontEnd Web Development
 ```
 Materi :
-- Javascript Function dan Scope
+- Javascript Scope dan Function
 - Type data dan Properties Method
 - DOM
 
-### Day 1 Javascript Function
+### Day 1 Javascript Scope dan Function
+#### Scope
+Scope adalah konsep dalam flow data variabel. Menentukan suatu variabel bisa diakses pada scope tertentu atau tidak.
+-	**Blocks**\
+Blocks adalah code yang berada didalam curly braces {}. Conditional, function, dan  looping menggunakan blocks.
+-	**Global Scope**\
+Global scope berarti variabel yang kita buat dapat diakses dimanapun dalam suatu file. Agar menjadi Global Scope, suatu variabel harus dideklarasikan diluar Blocks.
+-	**Local Scope**\
+Local scope berarti kita mendeklarasikan variabel didalam blocks seperti function, conditFunction adalah sebuah blok kode dalam sebuah grup untuk menyelesaikan 1 task/1 fitur. Saat kita membutuhkan fitur tersebut nantinya, kita bisa kembali menggunakannya.
+ional, dan looping. Maka variabel hanya bisa diakses didalam blocks saja. Tidak bisa diakses diluar blocks.
+
+#### Function
 Function adalah sebuah blok kode dalam sebuah grup untuk menyelesaikan 1 task/1 fitur. Saat kita membutuhkan fitur tersebut nantinya, kita bisa kembali menggunakannya.
 
 - **Struktur Fungsi**
@@ -79,3 +90,11 @@ cariAngka(23)
 ![image.PNG](gambar/OutputContohKasus.PNG)
 
 dari output yang dikeluuarkan dari codingan kasus yang kita buat dapat dilihat bahwa angka 14 dan 3 output nya "yes ketemu", sementara angka 23 outputnya "data tidak ditemukan". Mengapa demikian?, Karena di codingan kita membuat batas loopingnya(isKetemu)adalah 20, yang artinya perulangan akan berhenti diangka 20, dan maka dari itu angka 23 tidak dapat ditemukan ini diperoleh karna kita memberikan else pada kodingan.
+**Contoh Kasus**
+```
+function nama(a){
+    console.log(`halo apa kabar ${a}?`);   
+
+}
+nama("Salsa")
+```
