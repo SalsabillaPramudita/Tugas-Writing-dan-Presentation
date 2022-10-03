@@ -7,7 +7,9 @@ Track : FrontEnd Web Development
 Materi :
 - Javascript Scope dan Function
 - Type data dan Properties Method
-- DOM
+- DOM Introduction dan Traversing Element
+- DOM Manipulating Elements dan Manipulating Styles
+- DOM Events dan DOM Forms
 
 ### Day 1 Javascript Scope dan Function
 #### Scope
