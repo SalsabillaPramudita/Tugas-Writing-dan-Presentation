@@ -554,7 +554,7 @@ Membuat Tampilan Login sederhana
     })
 
     ```    
-![image.png]( gambar/output-login.png)
+![image.png]( gambar/output-login1.PNG)
 
 ![image.png]( gambar/output-login2.PNG)
 
