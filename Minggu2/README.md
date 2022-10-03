@@ -426,4 +426,52 @@ container.classList.remove("container") // menghapus class
 ```
 
 ### Day 5 DOM Events dan DOM Forms
+**Events**
+Events adalah kejadian/kegiatan/interaksi yang user berikan kepada website/
+events terdiri dari : 
+- click
+- submit
+- focus
+- blur
+- hover
+- change
+- scroll
+
+**3 Cara menampilkan Events**
+- HTML Atribut
+    ```
+    <h1 onclick="alert('selamat datang')"> hallo</h1>
+    ```
+   html atribut maksudnya adalah kita memberikan events pada file html nya langsung
+   
+- Event Property
+    - codingan html
+      ```
+      <p id="paragraf">click me</p>
+      ```
+    - codingan js
+      ```
+      let paragraf = document.getElementById("paragraf")
+
+       paragraf.onclick = function () {
+       alert("ini pragraf")
+       }
+      ```
+      Event Property ini maksdnya kita menambahkan event di file js kita, yang mana di file html nya harus ada element yang akan kita panggil. disini saya menggunakan id untuk memanggil elemnt tersebut
+- addEventListener
+  - codingan html
+      ```
+        <button id="btn">submit</button>
+      ```   
+     
+   - codingan js
+      ```
+        let button = document.getElementById("btn")
+        button.addEventListener("click",function ()  {
+            alert("ini button")
+        })
+      ```
+      sama halnya dengan event property, addEventListener juga memanggil element yang ada di file html nya. tetapi beda addEventListener dengan event property adalah di addEventListener kita dapat menjalankan multiple event.
+      
+
 
