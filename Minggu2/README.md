@@ -472,6 +472,87 @@ events terdiri dari :
         })
       ```
       sama halnya dengan event property, addEventListener juga memanggil element yang ada di file html nya. tetapi beda addEventListener dengan event property adalah di addEventListener kita dapat menjalankan multiple event.
-      
+
+#### Contoh project sederhana events
+
+Membuat Tampilan Login sederhana
+- codingan html
+    ```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document salsa</title>
+        <script src="login.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <form id="sign-in">
+                <h1>Sign In</h1>
+
+
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" />
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                <button type="submit"> Log In</button>
+
+            </form>  
+
+
+        </div>
+
+    </body>
+    </html>
+    ```
+- codingan js
+    ```
+    let loginForm = document.querySelector("#sign-in")
+    let inputUsername = document.querySelector('#username')
+    let inputPassword = document.querySelector('#password')
+
+    let user = {
+      username: "salsabilla",
+      password: "12345"
+    }
+
+    loginForm.addEventListener("submit", (event) => {
+      event.preventDefault()
+
+      let userLogin = {
+        username: inputUsername.value,
+        password: inputPassword.value
+      }
+
+      console.log(userLogin);
+
+      let login = userLogin.username == user.username && 
+                  userLogin.password == user.password;
+
+      if (login) {
+        console.log("selamat anda berhasil login")
+      } else {
+        console.log("username dan password anda salah");
+      }
+
+      // Membersihkan form
+      // cara 1
+      loginForm.reset()
+
+      // cara 2
+      // inputUsername.value = ""
+      // inputPassword.value = ""
+
+      // console.log("ini dari form yg di submit");
+    })
+
+    ```    
 
 
