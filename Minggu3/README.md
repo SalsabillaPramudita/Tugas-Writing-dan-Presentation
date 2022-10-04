@@ -46,14 +46,28 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
       ![image.png]( gambar/output1.PNG)\
       bisa dilihat dari codingan dan hasilnya, di array arrBuah kita tidak menambahkan "durian", dengan push() kita bisa menambahkan data "durian", perlu diperhatikan push() hanya bisa menambahkan data diposisi akhir. 
       
-   - pop()
+   - pop()\
         Menghapus elemen terakhir dari array, dan mengembalikan elemen itu\
         ```
         arrBuah.pop()
         console.log(arrBuah)
         ```
+        output
+      
+      ![image.png]( gambar/output2.PNG)\
+      output yang dihasilkan adalah seperti gambar diatas, yang mana data "durian" yang kita push sebelumnya sudah terhapus, beginilah cara kerja pop()
         
-   - unshift()
+   - unshift()        
+        Menambahkan elemen baru ke awal array, dan mengembalikan panjang baru\
+        ```
+        arrBuah.unshift("apel")
+        console.log(arrBuah)
+        ```
+       output
+      
+      ![image.png]( gambar/output3.PNG)\
+      pada gambar diatas terdapat "apel", yang mana itu kita dapatkan dari properti unshift
+      
    - shift()
    - splice()
    - slice()
