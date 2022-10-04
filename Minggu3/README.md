@@ -211,7 +211,7 @@ Merubah angka desimal menjadi persen
  #### Multidimensional Array
  Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array
  
-     ![image.png]( gambar/array-multi.PNG)\
+ ![image.png]( gambar/array-multi.PNG)\
  
 
     
