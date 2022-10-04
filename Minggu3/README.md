@@ -1,1 +1,36 @@
+# Summary
+```
+Minggu 3 Web Development
+Nama  : Salsabilla Pramudita
+Track : FrontEnd Web Development
+```
+Materi :
+- JavaScript intermediate - Array & Multidimensional Array
+- JavaScript Intermediate - Object & Array of Object
+- JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
+- JavaScript Intermediate - Web Storage
+- JavaScript Intermediate - Asynchronous - Introduction dan JavaScript Intermediate - Asynchronous - Promise
 
+
+### Day 1 JavaScript intermediate - Array & Multidimensional Array
+
+#### Array
+Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berbagai macam
+- **Cara Membuat Array**
+    ```
+    let arr = ["hallo", 1, "true"]
+    ```
+- **Cara akses Array** 
+    ```
+    console.log(arr)
+    ```
+    - berdasarkan index
+        ```
+        console.log(arr[1]) //output 1
+        ```
+- sc
+- saacs
+- cac
+- cdcszd
+- sdzcdsc
+- csd
