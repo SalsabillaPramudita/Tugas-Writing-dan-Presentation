@@ -95,7 +95,8 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
   
  **Looping pada Array**
  
-- For Of
+- For Of\
+    JavaScript untuk pernyataan loop melalui nilai-nilai objek yang dapat diubah. Ini memungkinkan Anda mengulang struktur data yang dapat diubah seperti Array, Strings, Maps, NodeLists, dan banyak lagi
     ```
         for (variable of iterable) {
       // code block to be executed
@@ -109,13 +110,26 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     for(let buah of arrBuah){
     console.log(buah)
     }
-
     ```
+    
     output
-      
-      ![image.png]( gambar/output5.PNG)\
+    
+    ![image.png]( gambar/output5.PNG)\
     
   
 - For Each
+    ```
+    array.forEach(function(currentValue, index, arr), thisValue)    
+    ```
+    contoh
+    ```
+     let arrBuah = ["jeruk","semangka", "pepaya", "rambutan"]
+      arrBuah.forEach((item) => {
+      console.log(item)
+    })
+    ```
+    output
+    ![image.png]( gambar/output6.PNG)\
+    
 - Map
 
