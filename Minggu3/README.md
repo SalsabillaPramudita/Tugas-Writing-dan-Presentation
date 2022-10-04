@@ -208,5 +208,10 @@ Merubah angka desimal menjadi persen
     
     ![image.png]( gambar/output8.PNG)\
     
- #### Arra
+ #### Multidimensional Array
+ Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array
+ 
+     ![image.png]( gambar/array-multi.PNG)\
+ 
+
     
