@@ -34,7 +34,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     console.log(arr.length)
     ```
-   - push()
+   - push()\
         Menambahkan elemen baru ke akhir array, dan mengembalikan panjang baru
       ```
       let arrBuah = ["jeruk","semangka", "pepaya", "rambutan"]
