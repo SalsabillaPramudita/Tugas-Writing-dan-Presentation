@@ -24,11 +24,30 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     console.log(arr)
     ```
-    - berdasarkan index
-        ```
-        console.log(arr[1]) //output 1
-        ```
-- sc
+    berdasarkan index
+    ```
+    console.log(arr[1]) //output 1
+    ```
+- **Array Properties**
+   - length\
+        length berfungsi untuk menjumlahkan banyak array
+    ```
+    console.log(arr.length)
+    ```
+   - push()
+        Menambahkan elemen baru ke akhir array, dan mengembalikan panjang baru
+      ```
+      let arrBuah = ["jeruk","semangka", "pepaya", "rambutan"]
+
+       arrBuah.push("durian")//
+      ```
+      output
+      
+   - pop()
+   - unshift()
+   - shift()
+   - splice()
+   - slice()
 - saacs
 - cac
 - cdcszd
