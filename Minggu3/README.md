@@ -78,8 +78,20 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
       
       ![image.png]( gambar/output4.PNG)\
       dari gambar diatas, element pertama sudah hilang, itu karna properti shift looh
-   - splice()
-   - slice()
+   - splice()\
+      Menambahkan/Menghapus elemen dari array
+      ```
+      arrBuah.splice(2, 0, "buah pisang")
+      ```
+      splice, merubah data arraynya dan dapat mereturn nilai
+   - slice()\
+        Memilih bagian dari array, dan mengembalikan array baru
+      ```
+      let slice = arrBuah.slice(2, 4)
+      console.log(arrBuah)
+      console.log(slice)      
+      ```
+      mengambil data dengan cara men-copy
 - saacs
 - cac
 - cdcszd
