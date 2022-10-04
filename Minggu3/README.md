@@ -68,7 +68,16 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
       ![image.png]( gambar/output3.PNG)\
       pada gambar diatas terdapat "apel", yang mana itu kita dapatkan dari properti unshift
       
-   - shift()
+   - shift()        
+        Menghapus elemen pertama dari array, dan mengembalikan elemen itu
+        ```
+         arrBuah.shift()
+         console.log(arrBuah)
+        ```
+      output
+      
+      ![image.png]( gambar/output4.PNG)\
+      dari gambar diatas, element pertama sudah hilang, itu karna properti shift looh
    - splice()
    - slice()
 - saacs
