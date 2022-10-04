@@ -92,8 +92,10 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
       console.log(slice)      
       ```
       mengambil data dengan cara men-copy
-- saacs
-- cac
-- cdcszd
-- sdzcdsc
-- csd
+  
+ **Looping pada Array**
+ 
+- For Of
+- For Each
+- Map
+
