@@ -157,6 +157,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     outputnya sama dengan forEach()
   
-**Perbedaan Looping pada array
+**Perbedaan Looping pada array**
 
-    ![image.png]( gambar/array-loop.PNG)\
+
+![image.png]( gambar/array-loop.png)\
