@@ -211,7 +211,33 @@ Merubah angka desimal menjadi persen
  #### Multidimensional Array
  Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array
  
+ 
+ - Akses index multidimensional array
+ 
  ![image.png]( gambar/array-multi.PNG)\
  
+- contoh
+  ```
+      let arrMulti = [
+      ["nama", "alpha"],
+      ["umur", 17],
+      ["kelas", "JS"],
+    ]
 
+    console.log(arrMulti[0][1]);
+    console.log(arrMulti[2][1])
+  ```
+  output
+  
+  ![image.png]( gambar/output9.PNG)\
+  
+  mengganti data array
+  ```
+      arrMulti[2][1] = "HTML"
+    console.log(arrMulti)
+  ```
+  output
+  
+    ![image.png]( gambar/output10.PNG)\
+  
     
