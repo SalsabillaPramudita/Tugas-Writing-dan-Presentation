@@ -96,6 +96,26 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
  **Looping pada Array**
  
 - For Of
+    ```
+        for (variable of iterable) {
+      // code block to be executed
+    }    
+    ```
+    
+    contoh 
+    ```
+    let arrBuah = ["jeruk","semangka", "pepaya", "rambutan"]
+    
+    for(let buah of arrBuah){
+    console.log(buah)
+    }
+
+    ```
+    output
+      
+      ![image.png]( gambar/output5.PNG)\
+    
+  
 - For Each
 - Map
 
