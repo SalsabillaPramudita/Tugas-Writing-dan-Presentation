@@ -151,13 +151,62 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     contoh 
     ```
-        arrBuah.map((item) => {
-        console.log(item)
+        let Buah = arrBuah.map((item, index) => {
+        if(index % 2 === 0){
+        return item + " "+ "segar"
+        }
     })
+
+     console.log(Buah)
+
     ```
-    outputnya sama dengan forEach()
+    output
+    
+    ![image.png]( gambar/output7.PNG)\
+    
+    bisa dilihat dari gambar diatas map bisa mereturn array
   
 **Perbedaan Looping pada array**
 
 
 ![image.png]( gambar/array-loop.png)\
+
+
+**Contoh Kasus**
+Merubah angka desimal menjadi persen
+
+- menggunakan map
+    ```
+    let angkaDes = [
+        0.45,
+        0.23,
+        0.54,
+        0.65,
+    ]
+
+    let angkaPersen = angkaDes.map((item) => {
+        return item * 100 + "%"
+
+    })   
+     console.log(angkaPersen)
+    ```
+    
+- menggunakan for each
+    ```
+    let angkaPersenforEach= []
+    angkaDes.forEach((item) => {
+        angkaPersenforEach.push(item * 100 + "%")
+
+    })
+    console.log(angkaPersenforEach)
+
+    ```
+    
+    Kasus seperti ini lebih baik menggunakan map
+    
+    output
+    
+    ![image.png]( gambar/output8.PNG)\
+    
+ #### Arra
+    
