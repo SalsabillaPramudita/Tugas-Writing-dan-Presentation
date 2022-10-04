@@ -119,9 +119,10 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
   
 - For Each
     
-Metode forEach() memanggil fungsi untuk setiap elemen dalam array.
+    Metode forEach() memanggil fungsi untuk setiap elemen dalam array.
 
-Metode forEach() tidak dijalankan untuk elemen kosong
+    Metode forEach() tidak dijalankan untuk elemen kosong
+    
     ```
     array.forEach(function(currentValue, index, arr), thisValue)    
     ```
@@ -137,4 +138,25 @@ Metode forEach() tidak dijalankan untuk elemen kosong
     ![image.png]( gambar/output6.PNG)\
     
 - Map
+    map() membuat array baru dari memanggil fungsi untuk setiap elemen array.
 
+    map() memanggil fungsi sekali untuk setiap elemen dalam array.
+
+    map() tidak menjalankan fungsi untuk elemen kosong.
+
+    map() tidak mengubah array asli
+    
+    ```
+    array.map(function(currentValue, index, arr), thisValue)
+    ```
+    contoh 
+    ```
+        arrBuah.map((item) => {
+        console.log(item)
+    })
+    ```
+    outputnya sama dengan forEach()
+  
+**Perbedaan Looping pada array
+
+    ![image.png]( gambar/array-loop.PNG)\
