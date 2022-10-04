@@ -118,6 +118,10 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     
   
 - For Each
+    
+Metode forEach() memanggil fungsi untuk setiap elemen dalam array.
+
+Metode forEach() tidak dijalankan untuk elemen kosong
     ```
     array.forEach(function(currentValue, index, arr), thisValue)    
     ```
@@ -129,6 +133,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     })
     ```
     output
+    
     ![image.png]( gambar/output6.PNG)\
     
 - Map
