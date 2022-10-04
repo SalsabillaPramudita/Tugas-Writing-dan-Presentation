@@ -43,6 +43,8 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
       ```
       output
       
+      ![image.png]( gambar/output1.PNG)
+      
    - pop()
    - unshift()
    - shift()
