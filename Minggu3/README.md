@@ -114,7 +114,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     
     output
     
-    ![image.png]( gambar/output5.PNG)\
+    ![image.png]( gambar/output5.PNG)
     
   
 - For Each
@@ -135,7 +135,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     output
     
-    ![image.png]( gambar/output6.PNG)\
+    ![image.png]( gambar/output6.PNG)
     
 - Map
     map() membuat array baru dari memanggil fungsi untuk setiap elemen array.
@@ -206,7 +206,7 @@ Merubah angka desimal menjadi persen
     
     output
     
-    ![image.png]( gambar/output8.PNG)\
+    ![image.png]( gambar/output8.PNG)
     
  #### Multidimensional Array
  Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array
@@ -214,7 +214,7 @@ Merubah angka desimal menjadi persen
  
  - Akses index multidimensional array
  
- ![image.png]( gambar/array-multi.PNG)\
+ ![image.png]( gambar/array-multi.PNG)
  
 - contoh
   ```
@@ -229,7 +229,7 @@ Merubah angka desimal menjadi persen
   ```
   output
   
-  ![image.png]( gambar/output9.PNG)\
+  ![image.png]( gambar/output9.PNG)
   
   mengganti data array
   ```
@@ -238,6 +238,6 @@ Merubah angka desimal menjadi persen
   ```
   output
   
-    ![image.png]( gambar/output10.PNG)\
+    ![image.png]( gambar/output10.PNG)
   
     
