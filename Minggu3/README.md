@@ -251,13 +251,16 @@ Merubah angka desimal menjadi persen
     ![image.png]( gambar/day2.PNG)
     
  - membuat sebuah object
-     ```
+    syntax dasar
+    ```
      let nama_obj = {
         key1: "value",
         key2: "value1",
      };
-
-     let siswa = {
+    ```
+    contoh
+     ```
+       let siswa = {
         nama : "Salsa",
         umur : 19,
         hobby : "menyanyi",
@@ -266,7 +269,29 @@ Merubah angka desimal menjadi persen
      console.log(siswa)
      ```
      Sama seperti tipe data sebelumnya. Object dapat diassign kedalam sebuah variabel\
+     Sama seperti array, didalam object kita dapat menyimpan properti dengan tipe data apapun.\
      note :key pada object disebut juga dengan properti
      
- 
+ - Mengakses Object dan Property Object
+     - membuat object nya dahulu
+     ```
+     let siswa = {
+        nama : "Salsa",
+        umur : 19,
+        hobby : "menyanyi",
+        'nomor handphone' : 08987654,
+     };
+     ```
+     
+     - ada 2 cara mengakses object
+     **dot notation**
+     ```
+      console.log(siswa.nama)
+     ```
+     **bracket**
+     ```
+      console.log(siswa["hobby"])
+      console.log(siswa["nomor handphone"])
+     ```
+
   
