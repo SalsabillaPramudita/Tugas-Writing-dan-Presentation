@@ -240,4 +240,33 @@ Merubah angka desimal menjadi persen
   
     ![image.png]( gambar/output10.PNG)
   
+  
+  
+ ### Day 2 JavaScript Intermediate - Object & Array of Object\
+ object adalah sebuah tipe data pada variabel yang menyimpan properti dan fungsi (method)
+- Properti adalah data lengkap dari sebuah object.
+
+- Method adalah action dari sebuah object. Apa saja yang dapat dilakukan dari suatu object.
+-  contoh objek mobil dengan properti nilai dan method
+    ![image.png]( gambar/day2.PNG)
     
+ - membuat sebuah object
+     ```
+     let nama_obj = {
+        key1: "value",
+        key2: "value1",
+     };
+
+     let siswa = {
+        nama : "Salsa",
+        umur : 19,
+        hobby : "menyanyi",
+        'nomor handphone' : 08987654,
+     };
+     console.log(siswa)
+     ```
+     Sama seperti tipe data sebelumnya. Object dapat diassign kedalam sebuah variabel\
+     note :key pada object disebut juga dengan properti
+     
+ 
+  
