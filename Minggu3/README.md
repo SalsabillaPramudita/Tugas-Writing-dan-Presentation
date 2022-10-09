@@ -293,5 +293,166 @@ Merubah angka desimal menjadi persen
       console.log(siswa["hobby"])
       console.log(siswa["nomor handphone"])
      ```
+- Membuat Key/Update Object
+        ```
+        let buku = {
+            judul : "mantan jadi manten",
+            penulis : "salsabilla",
+            "jumlah halaman" : 212,
 
-  
+
+        }
+        console.log(buku);
+        
+        //ada 2 cara
+        //cara 1
+        buku.tahun = 2022;
+        buku.terjual = 1000;
+        console.log(buku);   
+        ```
+        Output
+         ![image.png]( gambar/otput11.PNG)
+        
+        
+        ```
+             //cara 2
+        buku["penerbit"] = "gramedia";
+        console.log(buku)
+        ```
+        Output
+         ![image.png]( gambar/output12.PNG)
+         
+    - Menghapus Object
+    Kita dapat menghapus properti dari object menggunakan delete operator
+        
+     Sebelum di delete
+     ```
+         let hewan = {
+        nama : "kucing",
+        kaki : 4,
+        warna : "putih"
+    }
+    ```
+    Output
+      ![image.png]( gambar/output13.PNG)
+    
+    Setelah di delete
+    ```
+    delete hewan.warna;
+    delete hewan.kaki;
+
+    console.log(hewan)
+    ```
+    Output 
+      ![image.png]( gambar/output14.PNG)
+      
+  - Method object
+    Jika value yang kita masukkan pada property berupa function. Maka itu disebut method.
+    
+    ```
+    const greeting = {
+    welcome : function(){
+        return "halo selamat datang"
+    },
+    afterpay : function () {
+        return "terima kasih"
+
+        },
+    }
+
+    console.log(greeting.welcome())
+    console.log(greeting.afterpay())
+    ```
+    Output
+       ![image.png]( gambar/output15.PNG)
+       
+  - Nested Object
+    Pada real application nanti kalian pasti menemukan data object yang kompleks. Object yang berasal dari turunan object lainnya
+    ```
+    let buku = {
+    judul : "sayap sayap patah",
+    tahun : 2009,
+    penulis : {
+        penulis1: {
+            nama : "salsa",
+            umur : 19,
+            kota : "padang",
+        },
+        penulis2: { 
+            nama : "dita",
+            umur : 20,
+            kota : "pariaman",
+            },
+        },
+
+    };
+    console.log(buku)
+    console.log(buku.penulis.penulis1.nama)
+    console.log(buku.penulis.penulis2.umur)
+    ```
+    Output
+        ![image.png]( gambar/output16.PNG)
+      
+  - Looping Object
+    Jika kita ingin menampilkan seluruh object properti. Kita bisa menggunakan looping. Jadi tidak perlu mengakses secara manual memanggil setiap propertinya
+    ```
+     let buku = {
+    judul : "sayap sayap patah",
+    tahun : 2009,
+    penulis : {
+        penulis1: {
+            nama : "salsa",
+            umur : 19,
+            kota : "padang",
+        },
+        penulis2: { 
+            nama : "dita",
+            umur : 20,
+            kota : "pariaman",
+        },
+        },
+
+    };
+    console.log(buku)
+
+    for(let key in buku.penulis.penulis1){
+        console.log(buku.penulis.penulis1[key], 'ini dari nested')
+    }
+    ```
+    Output
+       ![image.png]( gambar/output17.PNG)
+       
+ - Array of Object
+     ```
+     let siswa = [{
+        nama : "Salsa",
+        umur : 19,
+        hobby : "menyanyi",
+     },
+     {
+        nama : "adi",
+        umur : 18,
+        hobby : "berenang",
+
+     },
+     {
+        nama : "rina",
+        umur : 16,
+        hobby : "rebahan",
+
+     }];
+
+     console.log(siswa);
+     let data = siswa.map((el) => {
+        // console.log(el.nama)
+        el.status = 'aktif';
+        return el
+     })
+     console.log(data)
+
+     console.log((siswa)[0].nama)
+     ```
+     Output
+       ![image.png]( gambar/output18.PNG)
+
+
