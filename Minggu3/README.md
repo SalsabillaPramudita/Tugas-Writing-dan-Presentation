@@ -564,9 +564,7 @@ Keuntungan Menggunakan Modules
     ```
     
 - Konsep Export Import
-
-
-       ![image.png]( gambar/ekporImpor.png)
+       ![image.png]( gambar/exporImpor.png)
 
     
     
