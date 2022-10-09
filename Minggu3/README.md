@@ -715,3 +715,24 @@ Memberikan Rekomendasiberdasarkan aktivitas dari web browser dapat berupa iklan,
 Session Storage
 Session Storage adalah penyimpanan website pada sisi klien yang digunakan untuk menyimpan data selama web-browser atau tab yang memuat halaman suatu website belum ditutup atau keluar (close).
 Session Storage dalam membangun sistem berbasis website biasanya digunakan untuk menyimpan user identity sebagai login status.
+
+Session Storage dapat anda manipulasi dengan menggunakan JavaScript command, berikut ini beberapa contoh command yang dapat anda gunakan :
+Mendeklarasikan / mendefinisikan suatu nilai tertentu pada session Storage :
+```
+sessionStorage.setItem('variabel ', 'value ');
+```
+variabel : nama atau identitas dari data yang akan anda simpan.
+value : parameter berupa nilai yang diset atau dideklarasikan.
+
+Mengambil data (atau seperti SELECT jika anda melakukan get data dari database) yang telah anda set dengan berdasarkan nama atau identitas yang telah anda set :
+```
+sessionStorage.getItem('variabel ');
+```
+
+Menghapus data yang telah anda set dengan berdasarkan nama atau identitas yang telah anda set :
+sessionStorage.removeItem('variabel ');
+
+Menghapus semua Session Storage
+```
+sessionStorage.clear();
+```
