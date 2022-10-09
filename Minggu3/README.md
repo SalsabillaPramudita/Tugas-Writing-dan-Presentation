@@ -162,7 +162,7 @@ Array di dalam Javascript mampu menyimpan banyak data dengan tipe data yang berb
     ```
     output
     
-    ![image.png]( gambar/output7.png)\
+    ![image.png]( gambar/output7.PNG)\
     
     bisa dilihat dari gambar diatas map bisa mereturn array
   
