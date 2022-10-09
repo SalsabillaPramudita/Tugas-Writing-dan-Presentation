@@ -612,4 +612,84 @@ Mengapa perlu menggunakan asynchronous?
 Asynchronous dibutuhkan ketika ada proses yangg membutuhkan waktu lama. Jadi kita bisa mengerjakan proses yg lain secara paralel.
 - Callbacks adalah suatu function namun cara pengeksekusiannya yang berbeda yaitu hanya mengeksekusi pada point tertentu.
 - Salah satu function yang digunakan untuk mengatur penjadwalan asynchronous adalah setTimeout function
-    
+- contoh penggunaan asynchronous
+    ```
+    function a() {
+        console.log('a done')
+      }
+        function b() {
+        setTimeout(
+          function() {
+            console.log('b done')
+          },2000
+        )
+      }
+      function c() {
+      console.log('c done')
+      }
+    a()
+    b()
+    c()
+    ```
+ - contoh penggunaan callback()
+     ```
+     console.log("CALLBACK")
+    console.log("A")
+
+    // butuh proses yg memakan waktu
+    // callback -> function yg dijadikan sbg argumen
+    setTimeout(() => {
+      console.log("B")
+    }, 1000)
+
+    console.log("C")
+     ```
+- contoh penggunaan promises
+    ```
+    console.log("PROMISES")
+    // pembuatan promise.............
+    let nontonPromise = new Promise((resolve, reject) => {
+      if (true) {
+        resolve("nonton terpenuhi") // berhasil
+      } 
+
+      reject("gagal"); // gagal
+    });
+
+    // eksekusi proses..............
+    console.log("A");
+
+    nontonPromise
+      .then((result) => {
+        console.log(result);
+        return `${result} bareng doi`
+      })
+      .then((result) => {
+        console.log(result)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    console.log("C");
+    ```
+  - contoh penggunaan promises dari function
+      ```
+          console.log("PROMISES dari function")
+        let nonton = (kondisi) => {
+          return new Promise((resolve, reject) => {
+            if (kondisi == "jalan") {
+              resolve("nonton terpenuhi")
+            }
+            reject("batal nonton")
+          })
+        }
+
+        nonton("jalan")
+        .then(result => {
+          console.log(result)
+        })
+        .catch(err => {
+          console.log(err);
+        })
+      ```
