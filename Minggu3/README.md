@@ -336,6 +336,7 @@ Merubah angka desimal menjadi persen
     }
     ```
     Output
+    
       ![image.png]( gambar/output13.PNG)
     
     Setelah di delete
@@ -470,6 +471,10 @@ JS Modules adalah cara untuk memisahkan kode file yang berbeda/
 Keuntungan Menggunakan Modules
     - mudah untuk mengelola kode 
     - kode tidak menumpuk di 1 file
+    
+- Export Import
+    Kita dapat melakukan export pada variabel, function, class
+    
 - Contoh Kasus Export Import\
     Jepang Meng-Export barang dan Indonesia import barang dari jepang.\
   Pertama yang diperlukan dalam module ini adalah menambahkan type"modul" di tag sript yang ada di file html
@@ -531,3 +536,20 @@ Keuntungan Menggunakan Modules
     import entertaiment,{motor as motorJepang, smartphone} from "./jepang.js"
     console.log(entertaiment)
     ```
+    contoh export function\
+    jepang.js
+    ```
+    export function sayHello(){
+    console.log("hellooo")
+    }
+    ```
+    
+    indonesia.js
+    ```
+    import entertaiment,{motor as motorJepang, smartphone, sayHello} from "./jepang.js"
+
+    sayHello();
+    ```
+    
+    
+    
