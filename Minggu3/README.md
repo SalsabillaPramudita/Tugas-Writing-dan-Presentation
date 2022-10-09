@@ -590,7 +590,8 @@ menampilkan deret angka 1 2 3 4 5
       deretAngka(5)
     ```
     
- Mencari Nilai faktorial 5!\
+ Mencari Nilai faktorial 5!
+ 
      ```
        function faktorial(n) {
         if (n == 1) {
