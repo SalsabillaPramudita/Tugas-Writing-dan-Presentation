@@ -8,8 +8,9 @@ Materi :
 - JavaScript intermediate - Array & Multidimensional Array
 - JavaScript Intermediate - Object & Array of Object
 - JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
-- JavaScript Intermediate - Web Storage
 - JavaScript Intermediate - Asynchronous - Introduction dan JavaScript Intermediate - Asynchronous - Promise
+- JavaScript Intermediate - Web Storage
+
 
 
 ### Day 1 JavaScript intermediate - Array & Multidimensional Array
@@ -603,4 +604,12 @@ menampilkan deret angka 1 2 3 4 5
       console.log(faktorial(5))
      ```
 
+ ### Day 4 - JavaScript Intermediate - Asynchronous - Introduction dan JavaScript Intermediate - Asynchronous - Promise
+ Pada konsep asynchronous, code akan dieksekusi tanpa menunggu eksekusi code lain selesai sehingga seakan-akan dieksekusi secara bersamaan. 
+Penggunaan asynchronous dapat dilakukan jika kita ingin mengambil data dari database\
+Mengapa perlu menggunakan asynchronous?
+
+Asynchronous dibutuhkan ketika ada proses yangg membutuhkan waktu lama. Jadi kita bisa mengerjakan proses yg lain secara paralel.
+- Callbacks adalah suatu function namun cara pengeksekusiannya yang berbeda yaitu hanya mengeksekusi pada point tertentu.
+- Salah satu function yang digunakan untuk mengatur penjadwalan asynchronous adalah setTimeout function
     
