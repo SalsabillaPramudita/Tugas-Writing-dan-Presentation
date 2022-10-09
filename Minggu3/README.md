@@ -464,8 +464,7 @@ Merubah angka desimal menjadi persen
        ![image.png]( gambar/output18.PNG)
        
  ### Day 3 - JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
-**Recursive** adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
-Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation\
+
 **Modules**
 JS Modules adalah cara untuk memisahkan kode file yang berbeda/
 Keuntungan Menggunakan Modules
@@ -566,6 +565,41 @@ Keuntungan Menggunakan Modules
 - Konsep Export Import
        ![image.png]( gambar/exporImpor.png)
 
+**Recursive**
+adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
+Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation\
+
+- Ciri dari rekursif\
+ - Fungsi rekursif selalu memiliki kondisi yang menyatakan kapan fungsi tersebut berhenti. Kondisi ini harus dapat dibuktikan akan tercapai, karena jika tidak tercapai maka kita tidak dapat membuktikan bahwa fungsi akan berhenti, yang berarti algoritma kita tidak benar.\
+ - Fungsi rekursif selalu memanggil dirinya sendiri sambil mengurangi atau memecahkan data masukan setiap panggilannya. Hal ini penting diingat, karena tujuan utama dari rekursif ialah memecahkan masalah dengan mengurangi masalah tersebut menjadi masalah-masalah kecil.
+ Function recursive punya
+base case -> titik paling kecil(berhenti)
+recursion case -> titik dia manggil diri dia sendiri  
+
+- Contoh Kasus
+menampilkan deret angka 1 2 3 4 5
+    ```
+    function deretAngka(n){
+        if (n == 1) {
+          console.log(n)
+        } else {
+          deretAngka(n-1)
+          console.log(n);
+        }
+      }
+      deretAngka(5)
+    ```
     
-    
+ Mencari Nilai faktorial 5!\
+     ```
+       function faktorial(n) {
+        if (n == 1) {
+          return 1
+        } else {
+          return n * faktorial(n - 1)
+        }
+      }
+      console.log(faktorial(5))
+     ```
+
     
