@@ -470,7 +470,7 @@ JS Modules adalah cara untuk memisahkan kode file yang berbeda/
 Keuntungan Menggunakan Modules
     - mudah untuk mengelola kode 
     - kode tidak menumpuk di 1 file
-- Contoh Kasus Export Import
+- Contoh Kasus Export Import\
     Jepang Meng-Export barang dan Indonesia import barang dari jepang.\
   Pertama yang diperlukan dalam module ini adalah menambahkan type"modul" di tag sript yang ada di file html
       ```
@@ -506,5 +506,12 @@ Keuntungan Menggunakan Modules
     
            ![image.png]( gambar/output19.PNG)
            
-      
+   Method as(alias)\
+      as fungsinya merubah variabel
+      ```
+      import {motor as motorJepang, smartphone} from "./jepang.js"
+
+        console.log(smartphone)
+        console.log(motorJepang)
+       ```
     
