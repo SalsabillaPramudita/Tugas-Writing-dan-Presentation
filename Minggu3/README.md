@@ -463,5 +463,11 @@ Merubah angka desimal menjadi persen
        ![image.png]( gambar/output18.PNG)
        
  ### Day 3 - JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
-Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
+**Recursive** adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
 Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation
+**Modules**
+JS Modules adalah cara untuk memisahkan kode file yang berbeda/
+Keuntungan Menggunakan Modules
+    - mudah untuk mengelola kode 
+    - kode tidak menumpuk di 1 file
+
