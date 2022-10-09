@@ -461,5 +461,7 @@ Merubah angka desimal menjadi persen
      Output
      
        ![image.png]( gambar/output18.PNG)
-
-
+       
+ ### JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
+Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
+Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation
