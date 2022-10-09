@@ -464,10 +464,47 @@ Merubah angka desimal menjadi persen
        
  ### Day 3 - JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
 **Recursive** adalah function yang memanggil dirinya sendiri sampai kondisi tertentu\
-Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation
+Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation\
 **Modules**
 JS Modules adalah cara untuk memisahkan kode file yang berbeda/
 Keuntungan Menggunakan Modules
     - mudah untuk mengelola kode 
     - kode tidak menumpuk di 1 file
+- Contoh Kasus Export Import
+    Jepang Meng-Export barang dan Indonesia import barang dari jepang.\
+  Pertama yang diperlukan dalam module ini adalah menambahkan type"modul" di tag sript yang ada di file html
+      ```
+      <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
 
+      <!-- file yg ada disini cuma bisa melakukan import -->
+      <script src="./indonesia.js" type="module"></script>
+    </body>
+    </html>
+      ```
+     jepang.js(export)
+     ```
+    export let motor = ["suzuki","yamaha","honda","kawasaki"]
+    export let smartphone = ["samsung","sony","fijitsu","LG"]
+     ```
+    indonesia.js(import)
+    ```
+    import {motor, smartphone} from "./jepang.js"
+
+    console.log(smartphone)
+
+    console.log(motor)
+    ```
+    Output
+    
+           ![image.png]( gambar/output19.PNG)
+           
+      
+    
