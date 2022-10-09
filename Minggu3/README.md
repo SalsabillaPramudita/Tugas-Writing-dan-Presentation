@@ -489,12 +489,14 @@ Keuntungan Menggunakan Modules
     </body>
     </html>
       ```
-     jepang.js(export)
+      
+     **jepang.js(export)**
      ```
     export let motor = ["suzuki","yamaha","honda","kawasaki"]
     export let smartphone = ["samsung","sony","fijitsu","LG"]
      ```
-    indonesia.js(import)
+     
+    **indonesia.js(import)**
     ```
     import {motor, smartphone} from "./jepang.js"
 
@@ -507,11 +509,25 @@ Keuntungan Menggunakan Modules
            ![image.png]( gambar/output19.PNG)
            
    Method as(alias)\
-      as fungsinya merubah variabel
+      as fungsinya merubah variabel\
       ```
       import {motor as motorJepang, smartphone} from "./jepang.js"
 
         console.log(smartphone)
         console.log(motorJepang)
        ```
+    Export Default\
+    export default cuma bisa 1 yang di export\
+    export default ditangkap tnpa kurung kurawal\
     
+    jepang.js
+    ```
+    let entertaiment = ["anime","manga","wibu","dorama"]
+    export default entertaiment
+    ```
+    
+    indonesia.js
+    ```
+    import entertaiment,{motor as motorJepang, smartphone} from "./jepang.js"
+    console.log(entertaiment)
+    ```
