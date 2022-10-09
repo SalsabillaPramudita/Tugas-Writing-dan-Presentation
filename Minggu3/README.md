@@ -693,3 +693,25 @@ Asynchronous dibutuhkan ketika ada proses yangg membutuhkan waktu lama. Jadi kit
           console.log(err);
         })
       ```
+
+### Day 5 - JavaScript Intermediate - Web Storage
+Web Storage atau biasanya dapat diketahui sebagai DOM storage (Document Object Model Storage), adalah metode yang digunakan pada website untuk dapat menyimpan data pada sisi klien (client-side).
+
+**Macam-macam Web Storage yang Bekerja pada Client-Side**
+Terdapat beberapa web storage yang dapat anda ketahui, berikut ini macam-macam web-storage pengertian beserta dengan fungsinya :
+
+Cache
+Cache dalam web browser adalah teknologi yang diguanakan untuk menyimpan atau asset dapat berupa (data, gambar, file dan dokumen lain sebagainya) ketika website dimuat pertama kali, sehingga ketika web tersebut di-load kembali akan mejadi lebih cepat karena tidak perlu men-download kembali file-file dari server.
+
+
+Cookie
+Cookie adalah sebagin kecil dari data yang dikirim dari sebuah situs web dan disimpan dalam komputer pengguna oleh web browser ketika pengguna tersebut sedang membuka halaman dari suatu webiste tertentu.
+Sebenarnya ketika anda menggunakan web browser sangat sering sekali bekerja dengan cookie, misalkan :
+Menyimpan Login informasi pada website yang telah di akses oleh user.
+Menyimpan Configurasi website misal bahasa.
+Memberikan Rekomendasiberdasarkan aktivitas dari web browser dapat berupa iklan, playlist, berita dan lain sebagainya.
+
+
+Session Storage
+Session Storage adalah penyimpanan website pada sisi klien yang digunakan untuk menyimpan data selama web-browser atau tab yang memuat halaman suatu website belum ditutup atau keluar (close).
+Session Storage dalam membangun sistem berbasis website biasanya digunakan untuk menyimpan user identity sebagai login status.
