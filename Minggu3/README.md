@@ -324,7 +324,7 @@ Merubah angka desimal menjadi persen
         
          ![image.png]( gambar/output12.PNG)
          
-    - Menghapus Object
+ - Menghapus Object
     Kita dapat menghapus properti dari object menggunakan delete operator
         
      Sebelum di delete
@@ -349,7 +349,7 @@ Merubah angka desimal menjadi persen
     
       ![image.png]( gambar/output14.PNG)
       
-  - Method object
+ - Method object
     Jika value yang kita masukkan pada property berupa function. Maka itu disebut method.
     
     ```
@@ -370,7 +370,7 @@ Merubah angka desimal menjadi persen
     
        ![image.png]( gambar/output15.PNG)
        
-  - Nested Object
+- Nested Object
     Pada real application nanti kalian pasti menemukan data object yang kompleks. Object yang berasal dari turunan object lainnya
     ```
     let buku = {
@@ -398,7 +398,7 @@ Merubah angka desimal menjadi persen
     
         ![image.png]( gambar/output16.PNG)
       
-  - Looping Object
+ - Looping Object
     Jika kita ingin menampilkan seluruh object properti. Kita bisa menggunakan looping. Jadi tidak perlu mengakses secara manual memanggil setiap propertinya
     ```
      let buku = {
