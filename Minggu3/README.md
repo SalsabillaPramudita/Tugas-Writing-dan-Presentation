@@ -368,9 +368,10 @@ Merubah angka desimal menjadi persen
     console.log(greeting.welcome())
     console.log(greeting.afterpay())
     ```
+    
     Output
     
-       ![image.png]( gambar/output15.PNG)
+    ![image.png]( gambar/output15.PNG)
        
 - Nested Object
     Pada real application nanti kalian pasti menemukan data object yang kompleks. Object yang berasal dari turunan object lainnya
@@ -396,9 +397,10 @@ Merubah angka desimal menjadi persen
     console.log(buku.penulis.penulis1.nama)
     console.log(buku.penulis.penulis2.umur)
     ```
-    Output
     
+    Output  
         ![image.png]( gambar/output16.PNG)
+        
       
  - Looping Object
     Jika kita ingin menampilkan seluruh object properti. Kita bisa menggunakan looping. Jadi tidak perlu mengakses secara manual memanggil setiap propertinya
@@ -426,9 +428,10 @@ Merubah angka desimal menjadi persen
         console.log(buku.penulis.penulis1[key], 'ini dari nested')
     }
     ```
-    Output
     
+    Output    
        ![image.png]( gambar/output17.PNG)
+       
        
  - Array of Object
      ```
@@ -460,9 +463,11 @@ Merubah angka desimal menjadi persen
 
      console.log((siswa)[0].nama)
      ```
+     
      Output
      
        ![image.png]( gambar/output18.PNG)
+       
        
  ### Day 3 - JavaScript Intermediate - Rekursif dan JavaScript Intermediate - Modules
 
