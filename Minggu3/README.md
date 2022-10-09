@@ -566,7 +566,7 @@ Keuntungan Menggunakan Modules
 - Konsep Export Import
 
 
-       ![image.png]( gambar/ekporImpor.PNG)
+       ![image.png]( gambar/ekporImpor.png)
 
     
     
