@@ -551,5 +551,23 @@ Keuntungan Menggunakan Modules
     sayHello();
     ```
     
+    Membuat Export dari file lain, dan import dilakukan di file jepang.js\
+    amerika.js
+    ```
+    export let barang = ["macboock","iphone","iwatch"]
+    ```
+    
+    jepang.js
+    ```
+    import {barang} from "./amerika.js"
+    console.log(barang)
+    ```
+    
+- Konsep Export Import
+
+
+       ![image.png]( gambar/ekporImpor.PNG)
+
+    
     
     
