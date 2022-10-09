@@ -311,6 +311,7 @@ Merubah angka desimal menjadi persen
         console.log(buku);   
         ```
         Output
+        
          ![image.png]( gambar/otput11.PNG)
         
         
@@ -320,6 +321,7 @@ Merubah angka desimal menjadi persen
         console.log(buku)
         ```
         Output
+        
          ![image.png]( gambar/output12.PNG)
          
     - Menghapus Object
@@ -344,6 +346,7 @@ Merubah angka desimal menjadi persen
     console.log(hewan)
     ```
     Output 
+    
       ![image.png]( gambar/output14.PNG)
       
   - Method object
@@ -364,6 +367,7 @@ Merubah angka desimal menjadi persen
     console.log(greeting.afterpay())
     ```
     Output
+    
        ![image.png]( gambar/output15.PNG)
        
   - Nested Object
@@ -391,6 +395,7 @@ Merubah angka desimal menjadi persen
     console.log(buku.penulis.penulis2.umur)
     ```
     Output
+    
         ![image.png]( gambar/output16.PNG)
       
   - Looping Object
@@ -420,6 +425,7 @@ Merubah angka desimal menjadi persen
     }
     ```
     Output
+    
        ![image.png]( gambar/output17.PNG)
        
  - Array of Object
@@ -453,6 +459,7 @@ Merubah angka desimal menjadi persen
      console.log((siswa)[0].nama)
      ```
      Output
+     
        ![image.png]( gambar/output18.PNG)
 
 
