@@ -26,7 +26,7 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
     {"firstName":"Peter", "lastName":"Jones"}
   ]
   }
-```
+  ```
 
 **Day 2 Git & Github Lanjutan**
 **Day 3  Responsive Web Design dan Bootstrap 5**
