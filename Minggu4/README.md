@@ -28,9 +28,21 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
   }
   ```
   
-  - Asyncronous fetch di Javascript
+- Asyncronous fetch di Javascript\
   Fetch API adalah alat default untuk membuat jaringan dalam aplikasi web. Meskipun umumnya mudah digunakan, ada beberapa nuansa yang harus diperhatikan. Fetch API pada javascript merupakan kegiatan untuk meminta/request layanan ke endpoint/letak url yang akan menerima request pada website secara local maupun public, untuk mengambil response resource / sumber daya berupa data berformat json atau text yang biasa dilakukan programmer untuk membangun website yang membutuhkan data dari website lain.
-
+  ```js
+  const dataApi = fetch('http://www.omdbapi.com/?apike=7dbd864d&s=john')
+  console.log( dataApi )
+  ```
+ codingan diatas hasilnya adalah “promise”, supaya kita dapatkan data JSON yang kita mau, kita bisa tambahkan “then” 
+ ```js
+ const movieDb = fetch('http://www.omdbapi.com/?apikey=7dbd864d&s=john')
+  .then(response => response.json())
+  .then(response => console.log(response));
+ ```
+ ![image.png]( gambar/img2.PNG)\
+ maka hasilnya seperti gambar diatas.
+ 
 **Day 2 Git & Github Lanjutan**
 **Day 3  Responsive Web Design dan Bootstrap 5**
 
