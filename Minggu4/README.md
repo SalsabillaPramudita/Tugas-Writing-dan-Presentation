@@ -335,8 +335,8 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
     - vh: Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak support pada IE8 ke bawah.
 
   contoh codingan penggunaan unit relative dengan vw pada font\
-      ```
-        <!DOCTYPE html>
+```
+  <!DOCTYPE html>
       <html lang="en">
       <head>
           <meta charset="UTF-8">
@@ -361,7 +361,7 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
       </div>
       </body>
       </html>
-      ```
+```
   
   contoh codingan relativ unit
   ```html
@@ -439,8 +439,8 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
           </body>
     </html>
   ```
-  codingan css
-    ``css
+  codingan css\
+```css
       .flex-container {
       display: flex;
       background-color: rgb(128, 30, 0);
@@ -452,4 +452,4 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
       padding: 20px;
       font-size: 30px;
     }
-    ```
+```
