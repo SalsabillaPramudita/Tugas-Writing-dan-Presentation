@@ -203,6 +203,7 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
 **Commit pada GIT**
 
       -  ```git add .```, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
+      
           ![image.png]( gambar/img8.PNG)
 
       -  ```git commit```, Lakukan ‘git commit’ untuk save perubahan pada version control
