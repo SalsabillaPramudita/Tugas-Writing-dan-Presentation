@@ -261,21 +261,25 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
    - file berhasil di push ke github, lalu klik compare & pull request
    ![image.png]( gambar/img29.PNG)
    
+   - create pull request
   ![image.png]( gambar/img30.PNG)
   
- ![image.png]( gambar/img31.PNG)
- 
- ![image.png]( gambar/img32.PNG)
- 
- ![image.png]( gambar/img33.PNG)
-     
- 
-
-
-
-
-**Merge pada GIT**
+  - merge pull request
+    **Merge pada GIT**\
 Merge adalah suatu command dalam git untuk membuat branch yang bercabang menjadi satu kembali atau dengan kata lain mengintegrasikan kembali branch tersebut menjadi satu. Merge akan mengombinasikan beberapa tahapan commits menjadi satu branch yang terunifikasi
+   ![image.png]( gambar/img31.PNG)
+
+   ![image.png]( gambar/img32.PNG)
+
+ 
+
+- conflict di github
+ 
+
+
+
+
+
     
 **Day 3  Responsive Web Design dan Bootstrap 5**
 
