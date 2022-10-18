@@ -201,17 +201,20 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
        ![image.png]( gambar/img7.PNG)
        
 **Commit pada GIT**
- ```git add .```, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.      
+
+-  ```git add .```, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.      
           ![image.png]( gambar/img8.PNG)
 
-      -  ```git commit```, Lakukan ‘git commit’ untuk save perubahan pada version control
+-  ```git commit```, Lakukan ‘git commit’ untuk save perubahan pada version control
           ![image.png]( gambar/img9.PNG)
-
-      -  ```git push -u origin main``` digunakan untuk mengirimkan/perubahan file ke remote repository
+- ```git push -u origin main``` digunakan untuk mengirimkan/perubahan file ke remote repository
           ![image.png]( gambar/img10.PNG)
-
-      - hasilnya
+          
+- hasilnya
           ![image.png]( gambar/img11.PNG)
+          
+**Merge pada GIT**
+Merge adalah suatu command dalam git untuk membuat branch yang bercabang menjadi satu kembali atau dengan kata lain mengintegrasikan kembali branch tersebut menjadi satu. Merge akan mengombinasikan beberapa tahapan commits menjadi satu branch yang terunifikasi
     
 **Day 3  Responsive Web Design dan Bootstrap 5**
 
