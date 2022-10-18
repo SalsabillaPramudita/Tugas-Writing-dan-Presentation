@@ -27,19 +27,46 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
   ]
   }
   ```
+- Contoh Promise
+    ```js
+    let makan = (kondisi) => {
+      return new Promise((resolve, reject) => {
+        if (kondisi == "lapar") {
+          resolve("ayo makan")
+        }
+        reject("tidur")
+      })
+    }
+
+    // //contoh promise
+    makan("lapar").then(result => {
+      console.log(result)
+    }).catch(err => {
+      console.log(err)
+    })
+    ```
+ - Asyncrounous await di Javascripts
+    ```js
+     async function asyncMakan() {
+      let result = await makan("lapar")
+      console.log(result)
+
+    }
+    ```
+    pada codingan diaatas await bisa jalan karna adanya function async
   
 - Asyncronous fetch di Javascript\
   Fetch API adalah alat default untuk membuat jaringan dalam aplikasi web. Meskipun umumnya mudah digunakan, ada beberapa nuansa yang harus diperhatikan. Fetch API pada javascript merupakan kegiatan untuk meminta/request layanan ke endpoint/letak url yang akan menerima request pada website secara local maupun public, untuk mengambil response resource / sumber daya berupa data berformat json atau text yang biasa dilakukan programmer untuk membangun website yang membutuhkan data dari website lain.
-  ```js
-  const dataApi = fetch('http://www.omdbapi.com/?apike=7dbd864d&s=john')
-  console.log( dataApi )
-  ```
+    ```js
+    const dataApi = fetch('http://www.omdbapi.com/?apike=7dbd864d&s=john')
+    console.log( dataApi )
+    ```
  codingan diatas hasilnya adalah “promise”, supaya kita dapatkan data JSON yang kita mau, kita bisa tambahkan “then” 
- ```js
- const movieDb = fetch('http://www.omdbapi.com/?apikey=7dbd864d&s=john')
-  .then(response => response.json())
-  .then(response => console.log(response));
- ```
+   ```js
+   const movieDb = fetch('http://www.omdbapi.com/?apikey=7dbd864d&s=john')
+    .then(response => response.json())
+    .then(response => console.log(response));
+   ```
  ![image.png]( gambar/img2.PNG)\
  maka hasilnya seperti gambar diatas.
  
