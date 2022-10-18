@@ -439,7 +439,7 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
           </body>
     </html>
   ```
-  codingan css\
+  codingan css
 ```css
       .flex-container {
       display: flex;
@@ -453,3 +453,7 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
       font-size: 30px;
     }
 ```
+![image.png]( gambar/img33.PNG)
+  
+**Bootstrap 5**
+  
