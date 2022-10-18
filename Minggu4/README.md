@@ -139,7 +139,32 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
     
     ```
     output
-    ![image.png]( gambar/img3.PNG)\
+    ![image.png]( gambar/img3.PNG)
+    
+    apabila kita mau mengambil 10data saja, bisa memkai script dibawah
+    ```
+     containerDigimon = document.getElementById("list-digimon")
+
+    let getDataDigimon = async() => {
+      let URL = "https://digimon-api.vercel.app/api/digimon"
+      let response = await fetch(URL)
+      let digimon = await response.json()
+
+    digimon.slice(0, 10).forEach((item, index) => {
+
+        containerDigimon.innerHTML +=
+          `<div>
+          <img src="${item.img}" alt="" width="200">
+          <h3>${item.name}</h3>
+          </div>`
+      });
+
+
+    }
+    getDataDigimon()
+    
+    ```
+    hasilnya akan ada 10 data
     
     
     
