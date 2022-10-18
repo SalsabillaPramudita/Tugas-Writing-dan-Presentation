@@ -29,7 +29,7 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
   ```
 - membuat object promise
     ```js
-        ```js
+    
         let makan = (kondisi) => {
           return new Promise((resolve, reject) => {
             if (kondisi == "lapar") {
@@ -40,7 +40,7 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
         }
     ```
 - Contoh menangkap object dengan Promise
-
+    ```js
     // //contoh promise
     makan("lapar").then(result => {
       console.log(result)
