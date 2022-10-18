@@ -213,6 +213,48 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
 - hasilnya
           ![image.png]( gambar/img11.PNG)
           
+**Membuat Organization**
+- Klik New organization pada kanan atas 
+ ![image.png]( gambar/img11.PNG)
+
+- lalu tuliskan nama dari organisasi yang akan dibuat
+- invite anggota tim
+   ![image.png]( gambar/img15.PNG)
+   
+ **Membuat Repository dan Branch di Organization**
+ - Klik repository
+  ![image.png]( gambar/img16.PNG)
+  
+   ![image.png]( gambar/img17.PNG)
+   
+   ![image.png]( gambar/img18.PNG)
+    
+   ![image.png]( gambar/img19.PNG)
+   
+   ![image.png]( gambar/img20.PNG)
+   
+   ![image.png]( gambar/img21.PNG)
+   
+   ![image.png]( gambar/img22.PNG)
+   
+   ![image.png]( gambar/img23.PNG)
+   
+   ![image.png]( gambar/img24.PNG)
+   
+   ![image.png]( gambar/img25.PNG)
+   
+   ![image.png]( gambar/img26.PNG)
+   
+   
+   ![image.png]( gambar/img27.PNG)
+   
+   ![image.png]( gambar/img28.PNG)
+     
+ 
+
+
+
+
 **Merge pada GIT**
 Merge adalah suatu command dalam git untuk membuat branch yang bercabang menjadi satu kembali atau dengan kata lain mengintegrasikan kembali branch tersebut menjadi satu. Merge akan mengombinasikan beberapa tahapan commits menjadi satu branch yang terunifikasi
     
