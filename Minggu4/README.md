@@ -273,19 +273,22 @@ Merge adalah suatu command dalam git untuk membuat branch yang bercabang menjadi
 
  
 
-- conflict di github
+- conflict di github\
   Sebagai contoh, misal kamu sedang mengerjakan fitur A, dan teman kamu mmengerjakan fitur B. Setelah beberapa hari kamu berhasil menyelesaikan fitur A tersebut namun ketika ingin menggabungkan/merge dengan master branch ternyata git menolak karena adanya konflik yang terjadi dikarenakan teman kamu sudah lebih dulu melakukan merge dan ada sebagian perubahan dari content/file yang kamu juga telah kerjakan.
 
 Jadi git menginginkan agar branch kamu dapat di merge dengan master branch maka kamu perlu melakukan resolve conflict.
 Disinilah git rebase bisa menjadi solusi.
+
     ```
     git checkout master
     git pull
     git checkout fitur_a
     git rebase
     ```
+    
  Disini git akan menginformasikan letak konflik dan kamu perlu meyelesaikan itu.
 Edit file yang memiliki konflik tersebut. Setelah selesai:
+
 ```
 git add <nama file>
 git status
