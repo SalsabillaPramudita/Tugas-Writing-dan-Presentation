@@ -201,13 +201,14 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
        ![image.png]( gambar/img7.PNG)
        
 **Commit pada GIT**
-    -  ```git add .```, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
+
+    -  ``git add .``, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
         ![image.png]( gambar/img8.PNG)
         
-    -  ```git commit```, Lakukan ‘git commit’ untuk save perubahan pada version control
+    -  ``git commit``, Lakukan ‘git commit’ untuk save perubahan pada version control
         ![image.png]( gambar/img9.PNG)
         
-    -  ```git push -u origin main``` digunakan untuk mengirimkan/perubahan file ke remote repository
+    -  ``git push -u origin main`` digunakan untuk mengirimkan/perubahan file ke remote repository
         ![image.png]( gambar/img10.PNG)
         
     - hasilnya
