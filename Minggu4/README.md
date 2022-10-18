@@ -138,6 +138,12 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
     getDataDigimon()
     
     ```
+    output
+    ![image.png]( gambar/img3.PNG)\
+    
+    
+    
+    
  
 **Day 2 Git & Github Lanjutan**
 **Day 3  Responsive Web Design dan Bootstrap 5**
