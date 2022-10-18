@@ -479,7 +479,7 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
   -  Masuklah ke laman resmi Bootstrap lalu klik menu Introduction yang terletak pada sisi sebelah kiri website.
   - Lalu lihatlah pada bagian Starter Template. Klik button Copy untuk menyalin script.
   
-  ![image.png]( gambar/img34.NG)
+  ![image.png]( gambar/img34.PNG)
   
   - paste ke file html
   ```
@@ -512,5 +512,5 @@ Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem
   </html>
   ```
   hasilnya
-  ![image.png]( gambar/img35.NG)
+  ![image.png]( gambar/img35.PNG)
   
