@@ -289,20 +289,167 @@ Disinilah git rebase bisa menjadi solusi.
  Disini git akan menginformasikan letak konflik dan kamu perlu meyelesaikan itu.
 Edit file yang memiliki konflik tersebut. Setelah selesai:
 
-```
-git add <nama file>
-git status
-git rebase --continue
-git checkout master
-```
+    ```
+    git add <nama file>
+    git status
+    git rebase --continue
+    git checkout master
+    ```
 
 Apabila sebelumnya branch fitur_a ini sudah menjadi pull_request yang ada di remote repository maka kamu bisa lakukan force push:
 git push -f <remote name> fitur_a
-
-
-
-
-
     
 **Day 3  Responsive Web Design dan Bootstrap 5**
+  
+  **Responsive Web Design**
+Responsive Web Design adalah cara membuat website kamu menjadi menarik di berbagai jenis device
 
+  - Viewport
+    ```
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    ```
+    Dari codingan diatas dapat kita lihat atribut content memiliki beberapa variabel untuk viewport
+      - ```width``` untuk mengatur lebar halaman, jika membarikan nilai device-width maka lebar akan mengikuti ukuran lebar dari perangkat;
+initial-scale adalah variabel untuk mengatur sekala (z00m) dari halaman web
+      - ```initial scale```adalah variabel untuk mengatur sekala (z00m) dari halaman web.
+  
+  - Relative CSS Unit
+    Halaman harus dapat menyesuaikan setiap ukuran yang kita tampilkan pada layar peranti yang berbeda-beda. Dengan menggunakan relative units, tampilan akan dapat mudah menyesuaikan dengan keadaan layar.
+  
+  Contohnya kita ingin membuat sebuah elemen div dengan lebar sesuai dengan viewport pada browser. Kita bisa saja berasumsi dengan menerapkan  lebar 1000px, misalnya, karena nilai tersebut cukup lebar untuk berbagai layar peranti. Maka kita menuliskan css seperti berikut:
+  ``` 
+    .container {
+        width: 1000px;
+        min-height: 200px;
+    }
+  ```
+  
+- Typography Units
+Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem, vw dan vh. Satuan tersebut dapat menyesuaikan ketika ukuran layar atau ukuran font itu sendiri diubah.
+
+em : Satuan relatif terhadap ukuran font sebuah elemen (2em berarti 2 kali ukuran font saat ini)
+ex: Satuan relatif terhadap tinggi font saat ini, satuan ini sangat jarang sekali digunakan.
+ch: Satuan relatif terhadap lebar dari karakter “0” nol.
+rem: Mirip seperti em, tetapi rem merupakan Satuan relatif terhadap ukuran font dari root element.
+vw:  Satuan relatif terhadap 1% lebar viewport. Contoh 1vw = 1% dari lebar viewport. Satuan ini tidak support pada IE8 ke bawah.
+vh: Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak support pada IE8 ke bawah.
+  
+  contoh codingan penggunaan unit relative dengan vw pada font
+      ```html
+      <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>responsive web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container h1 {
+                font-size: 8vw;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Dummy Text</h1>
+        <p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.
+            Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal
+            mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan
+            selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai
+            dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat
+            dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki
+            versi Lorem Ipsum.</p>
+    </div>
+    </body>
+    </html>
+  ```
+  
+  contoh codingan relativ unit
+  ```html
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <p class="rem">hallo ini dari rem</p>
+        </div>
+
+        <div class="container">
+          <p class="em">hallo ini dari em</p>
+        </div>
+
+  </body>
+  </html>
+  ```
+  
+  ```css
+  .rem {
+    font-size: 2rem;
+  }
+  
+  .em {
+    font-size: 2em;
+  } 
+  ```
+  
+  - media query\
+  berguna membuat layout kita responsive dengan menyesuaikan tampilan berdasarkan ukuran layar perangkat. 
+  
+  contoh media query
+  ```html
+  
+  @media only screen and (min-width: 400px) {
+    p { 
+  background: red; 
+  color: white;
+  }  
+  ```
+  
+ - flexbox
+  Flexbox merupakan konsep pengaturan layout yang mengatur ukuran elemen Child dari suatu Container untuk beradaptasi dengan Parent/Container-nya. Flexbox umumnya digunakan pada sebuah elemen yang tidak pasti ukurannya atau berubah-ubah(dinamis). Hal ini sangat bermanfaat untuk membuat tampilan website responsif.
+  
+  
+  contoh codingan
+  ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+      </head>
+      <body>
+        <h1>Flex Container</h1>
+
+        <div class="flex-container">
+          <div>a</div>
+          <div>b</div>
+          <div>c</div>
+          <div>d</div>
+
+        </div>
+
+          </body>
+    </html>
+  ```
+  codingan css
+    ``css
+      .flex-container {
+      display: flex;
+      background-color: rgb(128, 30, 0);
+    }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+    ```
