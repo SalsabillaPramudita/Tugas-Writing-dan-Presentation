@@ -164,12 +164,47 @@ Dari gambar diatas, disini terjadinya proses kolaborasi antar frontEnd dan BackE
     getDataDigimon()
     
     ```
-    hasilnya akan ada 10 data
-    
-    
+    hasilnya akan ada 10 data   
     
     
  
 **Day 2 Git & Github Lanjutan**
+
+#### Kenapa Git dan Github tools yang wajib digunakan?
+Karena kedua platform ini sangat membantu pekerjaan programmer dalam menyusun kode script secara grup/tim. Seluruh pekerjaan juga dapat dipantau dan dievaluasi dengan mudah karena penggunaan kontrol sistem.
+
+**GIT**
+Git adalah aplikasi yang dapat melacak setiap perubahan yang terjadi pada suatu folder atau file.
+
+**GitHub**
+GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah project yang dinamakan repository.
+
+**Perbedaan Git & GitHub**
+| Git | GitHub |
+| ------ | ------ |
+| diakses secara offline | diakses secara online |
+| di-install pada penyimpananan lokal | melalui layanan cloud |
+| sebagai control version system | sebagai source code hosting |
+| open source | pilihan bagi pengguna gratis dan berbayar |
+
+**Membuat Repository pada GIT**
+- login github
+- create repository
+   ![image.png]( gambar/img4.PNG)
+- create folder di file explorer dan buatlah file yang akan kita masukkan ke git
+  ![image.png]( gambar/img5.PNG)
+- klik kanan pada file tersebut lalu pilih gitbash, berikut syntax yang akan kita eksekusi
+    - ``git init``, syntak disamping berfungsi untuk membuat repository baru.
+      ![image.png]( gambar/img6.PNG)
+    - ``git remote add origin https://github.com/SalsabillaPramudita/Test-Repo.git``. Remote repository berfungsi untuk mengupload file yang telah Anda buat sebelumnya         di local disk
+       ![image.png]( gambar/img7.PNG)
+**Commit pada GIT**
+    -  ``git add .``, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
+        ![image.png]( gambar/img8.PNG)
+    -  ``git commit``, Lakukan ‘git commit’ untuk save perubahan pada version control
+        ![image.png]( gambar/img9.PNG)
+    -  ``git push -u origin main`` digunakan untuk mengirimkan/perubahan file ke remote repository
+        ![image.png]( gambar/img10.PNG)
+    
 **Day 3  Responsive Web Design dan Bootstrap 5**
 
