@@ -225,28 +225,40 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
  - Klik repository
   ![image.png]( gambar/img16.PNG)
   
+ - Buat nama repository  
    ![image.png]( gambar/img17.PNG)
    
+ - add file
    ![image.png]( gambar/img18.PNG)
     
+ - file berhasil terbuat
    ![image.png]( gambar/img19.PNG)
-   
+  
+  - membuat branch dev
    ![image.png]( gambar/img20.PNG)
-   
+  
+  - status branch
    ![image.png]( gambar/img21.PNG)
    
+  - clone repository
    ![image.png]( gambar/img22.PNG)
    
+   - mengganti branch
    ![image.png]( gambar/img23.PNG)
    
+   - membuat branch baru di git bash
    ![image.png]( gambar/img24.PNG)
    
+   - buatlah file baru yang akan kita commit
    ![image.png]( gambar/img25.PNG)
    
+   - tambahkan file dan commit
    ![image.png]( gambar/img26.PNG)   
    
+   - lalu push ke repository
    ![image.png]( gambar/img27.PNG)
    
+   - file berhasil di push ke github, lalu klik compare & pull request
    ![image.png]( gambar/img28.PNG)
    
   ![image.png]( gambar/img29.PNG)
