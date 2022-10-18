@@ -313,7 +313,7 @@ Responsive Web Design adalah cara membuat website kamu menjadi menarik di berbag
 initial-scale adalah variabel untuk mengatur sekala (z00m) dari halaman web
       - ```initial scale```adalah variabel untuk mengatur sekala (z00m) dari halaman web.
   
-  - Relative CSS Unit
+  - Relative CSS Unit\
     Halaman harus dapat menyesuaikan setiap ukuran yang kita tampilkan pada layar peranti yang berbeda-beda. Dengan menggunakan relative units, tampilan akan dapat mudah menyesuaikan dengan keadaan layar.
   
   Contohnya kita ingin membuat sebuah elemen div dengan lebar sesuai dengan viewport pada browser. Kita bisa saja berasumsi dengan menerapkan  lebar 1000px, misalnya, karena nilai tersebut cukup lebar untuk berbagai layar peranti. Maka kita menuliskan css seperti berikut:
@@ -324,44 +324,44 @@ initial-scale adalah variabel untuk mengatur sekala (z00m) dari halaman web
     }
   ```
   
-- Typography Units
+- Typography Units\
 Dalam penerapan font, kita juga perlu menggunakan satuan relatif seperti em, rem, vw dan vh. Satuan tersebut dapat menyesuaikan ketika ukuran layar atau ukuran font itu sendiri diubah.
 
-em : Satuan relatif terhadap ukuran font sebuah elemen (2em berarti 2 kali ukuran font saat ini)
-ex: Satuan relatif terhadap tinggi font saat ini, satuan ini sangat jarang sekali digunakan.
-ch: Satuan relatif terhadap lebar dari karakter “0” nol.
-rem: Mirip seperti em, tetapi rem merupakan Satuan relatif terhadap ukuran font dari root element.
-vw:  Satuan relatif terhadap 1% lebar viewport. Contoh 1vw = 1% dari lebar viewport. Satuan ini tidak support pada IE8 ke bawah.
-vh: Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak support pada IE8 ke bawah.
-  
-  contoh codingan penggunaan unit relative dengan vw pada font
-      ```html
-      <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>responsive web</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .container h1 {
-                font-size: 8vw;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="container">
-        <h1>Dummy Text</h1>
-        <p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.
-            Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal
-            mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan
-            selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai
-            dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat
-            dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki
-            versi Lorem Ipsum.</p>
-    </div>
-    </body>
-    </html>
-  ```
+    - em : Satuan relatif terhadap ukuran font sebuah elemen (2em berarti 2 kali ukuran font saat ini)
+    - ex: Satuan relatif terhadap tinggi font saat ini, satuan ini sangat jarang sekali digunakan.
+    - ch: Satuan relatif terhadap lebar dari karakter “0” nol.
+    - rem: Mirip seperti em, tetapi rem merupakan Satuan relatif terhadap ukuran font dari root element.
+    - vw:  Satuan relatif terhadap 1% lebar viewport. Contoh 1vw = 1% dari lebar viewport. Satuan ini tidak support pada IE8 ke bawah.
+    - vh: Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak support pada IE8 ke bawah.
+
+  contoh codingan penggunaan unit relative dengan vw pada font\
+      ```
+        <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title>responsive web</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+              .container h1 {
+                  font-size: 8vw;
+              }
+          </style>
+      </head>
+      <body>
+      <div class="container">
+          <h1>Dummy Text</h1>
+          <p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.
+              Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal
+              mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan
+              selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai
+              dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat
+              dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki
+              versi Lorem Ipsum.</p>
+      </div>
+      </body>
+      </html>
+      ```
   
   contoh codingan relativ unit
   ```html
