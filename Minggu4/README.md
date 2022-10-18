@@ -243,12 +243,19 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
    
    ![image.png]( gambar/img25.PNG)
    
-   ![image.png]( gambar/img26.PNG)
-   
+   ![image.png]( gambar/img26.PNG)   
    
    ![image.png]( gambar/img27.PNG)
    
    ![image.png]( gambar/img28.PNG)
+   
+  ![image.png]( gambar/img29.PNG)
+  
+ ![image.png]( gambar/img30.PNG)
+ 
+ ![image.png]( gambar/img31.PNG)
+ 
+ ![image.png]( gambar/img32.PNG)
      
  
 
