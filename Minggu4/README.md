@@ -194,18 +194,22 @@ GitHub adalah layanan cloud yang berguna untuk menyimpan dan mengelola sebuah pr
 - create folder di file explorer dan buatlah file yang akan kita masukkan ke git
   ![image.png]( gambar/img5.PNG)
 - klik kanan pada file tersebut lalu pilih gitbash, berikut syntax yang akan kita eksekusi
-    - ``git init``, syntak disamping berfungsi untuk membuat repository baru.
+    - ```git init```, syntak disamping berfungsi untuk membuat repository baru.
       ![image.png]( gambar/img6.PNG)
-    - ``git remote add origin https://github.com/SalsabillaPramudita/Test-Repo.git``. Remote repository berfungsi untuk mengupload file yang telah Anda buat sebelumnya         di local disk
+      
+    - ```git remote add origin https://github.com/SalsabillaPramudita/Test-Repo.git```. Remote repository berfungsi untuk mengupload file yang telah Anda buat sebelumnya         di local disk
        ![image.png]( gambar/img7.PNG)
        
 **Commit pada GIT**
-    -  ``git add .``, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
+    -  ```git add .```, gunakan syntax ini untuk menambahkan beberapa atau semua file yang akankita masukkan kedalam folder.
         ![image.png]( gambar/img8.PNG)
-    -  ``git commit``, Lakukan ‘git commit’ untuk save perubahan pada version control
+        
+    -  ```git commit```, Lakukan ‘git commit’ untuk save perubahan pada version control
         ![image.png]( gambar/img9.PNG)
-    -  ``git push -u origin main`` digunakan untuk mengirimkan/perubahan file ke remote repository
+        
+    -  ```git push -u origin main``` digunakan untuk mengirimkan/perubahan file ke remote repository
         ![image.png]( gambar/img10.PNG)
+        
     - hasilnya
         ![image.png]( gambar/img11.PNG)
     
