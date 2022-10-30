@@ -33,9 +33,23 @@ Materi :
     link download https://nodejs.org. nodejs adalah sebuah runtime javascript yang di buat dari v8 engine-nya chrome
   - Install Node.js\
     sangat mudah dalam penginstallan node.js ini kita tinggal next saja, lalu diakhir klik finish
-  - Tes Node.js 
+  - Buat Folder\
+    Setelah selesai, buat folder baru untuk instalasi react
+  - Tes Node.js\
     untuk memastikan Node.js kita berhasil terinstal maka bukalah cmd dan ketikkan **npm -v**
     ![img](gambar/gambar1.PNG)
-    
+  - Install React\
+    install React dengan mengetik **npm install -g create-react-app**
+  - Tes React\
+    Untuk mengecek proses instalasinya, bisa dilakukan dengan mengetik **create-react-app –version**
+  - Create Project\
+    **create-react-app project-baru** (kita bisa mengganti "project-baru” dengan nama project yang lain)
+     ![img](gambar/gambar2.PNG)
+  - Jalankan Project\
+    Setelah proses pembuatan project selesai,ketikkan 
+    **cd project-baru
+      npm start**
+    akan muncul halaman web yang terbuka otomatis dengan alamat localhost:3000
+    ![img](gambar/gambar3.PNG)
 
 
