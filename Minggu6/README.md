@@ -193,11 +193,10 @@ Materi :
      
      dari contoh kodingan diatas adalah contoh kasus sederhana, bagaimana kita mau menampilkan banyak data?, maka solusinya membuat component yang berisikan content data tersebut, lalu nantinya kita akan panggil dari file App.js nya.
      
-     ![img](gambar/gambar12.PNG)
+     ![img](gambar/gambar12.PNG)\
+        dari gambar diatas, saya sudah membuat folder components dan file MemberInfo.jsx. berikut codingan yang ada dalam file tersebut. 
       
-      dari gambar diatas, saya sudah membuat folder components dan file MemberInfo.jsx. berikut codingan yang ada dalam file tersebut. 
-      
-      ```js
+    ```
       const MemberInfo= ()=>{
       return(        
       <div className="container">
@@ -212,10 +211,10 @@ Materi :
           </div>
           )
       }
-          export default MemberInfo;
-      ```
+       export default MemberInfo;          
+    ```
       
-      codingan diatas adalah content yang kita buat pada file App.js sebelumnya. pindahkan saja codingan html yang ada App.js tadi ke MemberInfo.jsx
+    codingan diatas adalah content yang kita buat pada file App.js sebelumnya. pindahkan saja codingan html yang ada App.js tadi ke MemberInfo.jsx
       
      berikut codingan App.js
      
@@ -232,12 +231,79 @@ Materi :
         }
 
         export default App;
-      ```
+        
+      ```      
       
-      difile App.js ini kita hanya memanggil si MemberInfo.jsx yang telah kita buat tadi. part terpentingnya ada jangan lupa menyisipkan import di bagian atas codingan.
+ difile App.js ini kita hanya memanggil si MemberInfo.jsx yang telah kita buat tadi. part terpentingnya ada jangan lupa menyisipkan import di bagian atas codingan.
       
-      output
-    ![img](gambar/gambar13.PNG)
-      
+ output
+ ![img](gambar/gambar13.PNG)
+ 
+ jika kita mau manggil banyak data
+ ```js
+    import './App.css';
+    import MemberInfo from './components/Memberinfo';
+
+    function App() {
+      return (
+        <>
+        <MemberInfo />
+        <MemberInfo />
+        <MemberInfo />
+
+        </>
+      );
+    }
+
+    export default App;
+ ```
+ 
+ output 
+  ![img](gambar/gambar14.PNG)
+ 
+ - membuat component yang dinamis dengan props dan state
+ **props**
+ props merupakan argumen yang di-passing dari satu komponen ke komponen lain. Cara passing props sangatlah mudah, yaitu dengan menulisnya sebagai atribut pada elemen HTML. Props digunakan untuk melakukan komunikasi data antara komponen parent dan child.\
+ 
+ contoh props
+ 
+  file MemberInfo.jsx
+  ```
+  const MemberInfo= ({name, age, info, imgUrl})=>{
+
+    return(        
+    <div className="container">
+    <img src={imgUrl} alt='' className='profile-img'></img>
+
+    <div className='info-profile'>
+        <h2>{name}</h2>
+        <h3>{age}</h3>
+        <p>{info}</p>
+    </div>
+    </div>
+        )
+    }
+   export default MemberInfo;
+
+  ```
+  
+  file App.js
+  
+  ```js
+    import './App.css';
+    import MemberInfo from './components/Memberinfo';
+
+    function App() {
+      return (
+        <>
+        <MemberInfo name={"aca"} age={20} info={"Siswa stupen Skilvul"} imgUrl={"https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1"} />
+
+        </>
+      );
+    }
+
+    export default App;
+  ```
+  
 
 
