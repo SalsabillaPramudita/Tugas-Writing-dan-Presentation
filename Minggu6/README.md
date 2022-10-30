@@ -335,10 +335,180 @@ Materi :
  
  output 
      ![img](gambar/gambar16.PNG)
+ 
+ **State**\
+  State adalah sebuah object untuk menyimpan data pada React dan akan di render atau muat ulang ketika data mengalami perubahan.
      
  **useState**\
  useState di panggil dalam function component untuk menambahkan suatu state lokal. React akan menyimpan state antar render. useState memberikan dua hal: nilai state saat ini dan fungsi untuk memperbarui nilai tersebut. Anda dapat memanggil fungsi ini dari sebuah event handler atau dimanapun
+ 
+ contoh penggunaan useState
+ ```js
+    import { useState } from 'react';
+    import './App.css';
+    import MemberInfo from './components/Memberinfo';
+
+    function App() {
+      const [name, setName]= useState("Salsa");
+      const [age, setAge]= useState(19);
+
+      return (
+        <>
+          <MemberInfo name={name} age={age} info={"Siswa stupen Skilvul"} imgUrl={"https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1"} nameColor={"red"} />
+
+          <br />
+          <button onClick={()=> setName("aca")}>Change Name</button>;
+          <button onClick={()=> setAge(age + 1)}>Change Age</button>;
+        </>
+      );
+    }
+
+    export default App;
+
+ ```
+ 
+ output
+ ![img](gambar/gambar17.PNG)
+ 
+ bisa dilihat dari gambar diaatas terdapat sebuah buttonclick yang berfungsi merubah sebuah atribut
+ 
+ - Bootstrap di React
+ ada 2 cara
+  - Memakai getbootstrap 
+  - menginstall react bootstrap
+  
+ **Memakai getbootstrap**\
+  
+  - memasang bootstrap di file index.html
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+        content="Web site created using create-react-app"
+      />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+ 
+      <title>React App</title>
+      
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" /> <!-- Bootstrap CSS -->
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+  </html>
+
+  ```
+  
+  - mengubah background dari container
+  ```
+  const MemberInfo= ({name, age, info, imgUrl, nameColor})=>{
+
+      return(        
+      <div className="container bg-warning">
+      <img src={imgUrl} alt='' className='profile-img'></img>
+
+      <div className='info-profile'>
+          <h2 style={{ color : nameColor }}>{name}</h2>
+          <h3>{age}</h3>
+          <p>{info}</p>
+      </div>
+      </div>
+      )
+  }
+      export default MemberInfo;
+
+  ```
+  
+  - Output
+   ![img](gambar/gambar18.PNG)
+   
+   nah darigambar diatas bootsrap sudah berhasil kita pasang
+   
+   - Membuat file Navbar.jsx di folder components\
+     pada file Navbar ini kita copy saja codingan yang ada pada bottstrap, lalu mengganti "class" menjadi "classname". dan jangan lupa buat function terlebih dahulu
+     ```
+      const Navbar = () => {
+        return (
+          <>
+            <nav className="navbar navbar-expand-lg bg-success mb-5">
+              <div className="container">
+                <a className="navbar-brand" href="#">
+                  Navbar
+                </a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <a className="nav-link active" aria-current="page" href="#">
+                        Home
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Features
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Pricing
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </>
+        );
+      };
+
+      export default Navbar;
+     ```
+     
+    - Panggil Navbar.jsx di App.js
+    ```js
+    import { useState } from 'react';
+    import './App.css';
+    import MemberInfo from './components/Memberinfo';
+    import Navbar from './components/Navbar';
+
+    function App() {
+      const [name, setName]= useState("Salsa");
+      const [age, setAge]= useState(19);
+
+      return (
+        <>
+        <Navbar /> 
+          <MemberInfo name={name} age={age} info={"Siswa stupen Skilvul"} imgUrl={"https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1"} nameColor={"red"} />
+
+          {/* <MemberInfo name={"adit"} age={21} info={"Siswa Akademi Polisi"} imgUrl={"https://cdn-icons-png.flaticon.com/512/1140/1140494.png?w=740&t=st=1667147325~exp=1667147925~hmac=eaf85ab253cf13ad7ceca6f4ae264c4be98341276c7881d8ed82e7e9083fc866"} nameColor={"green"} /> */}
+
+          <br />
+          <button onClick={()=> setName("aca")}>Change Name</button>;
+          <button onClick={()=> setAge(age + 1)}>Change Age</button>;
+        </>
+      );
+    }
+
+    export default App;
+
+    ```
     
+  - output
+  
+   
+  
  
   
   
