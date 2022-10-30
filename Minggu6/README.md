@@ -193,9 +193,10 @@ Materi :
      
      dari contoh kodingan diatas adalah contoh kasus sederhana, bagaimana kita mau menampilkan banyak data?, maka solusinya membuat component yang berisikan content data tersebut, lalu nantinya kita akan panggil dari file App.js nya.
      
-      ![img](gambar/gambar12.PNG)
+     ![img](gambar/gambar12.PNG)
       
       dari gambar diatas, saya sudah membuat folder components dan file MemberInfo.jsx. berikut codingan yang ada dalam file tersebut. 
+      
       ```js
       const MemberInfo= ()=>{
       return(        
@@ -213,27 +214,30 @@ Materi :
       }
           export default MemberInfo;
       ```
+      
       codingan diatas adalah content yang kita buat pada file App.js sebelumnya. pindahkan saja codingan html yang ada App.js tadi ke MemberInfo.jsx
       
      berikut codingan App.js
+     
      ```js
-     import './App.css';
-     import MemberInfo from './components/Memberinfo';
+       import './App.css';
+       import MemberInfo from './components/Memberinfo';
 
-      function App() {
-        return (
-          <>
-          <MemberInfo />
-          </>
-        );
-      }
+        function App() {
+          return (
+            <>
+            <MemberInfo />
+            </>
+          );
+        }
 
-      export default App;
+        export default App;
       ```
+      
       difile App.js ini kita hanya memanggil si MemberInfo.jsx yang telah kita buat tadi. part terpentingnya ada jangan lupa menyisipkan import di bagian atas codingan.
       
       output
-    ![img](gambar/gambar12.PNG)
+    ![img](gambar/gambar13.PNG)
       
 
 
