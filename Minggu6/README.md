@@ -198,10 +198,10 @@ Materi :
       dari gambar diatas, saya sudah membuat folder components dan file MemberInfo.jsx. berikut codingan yang ada dalam file tersebut. 
       ```js
       const MemberInfo= ()=>{
-    return(        
-    <div className="container">
-    <img src='https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1'
-    alt='' className='profile-img'></img>
+      return(        
+      <div className="container">
+      <img src='https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1'
+      alt='' className='profile-img'></img>
 
           <div className='info-profile'>
               <h2>Salsa</h2>
