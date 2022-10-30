@@ -35,6 +35,7 @@ Materi :
     sangat mudah dalam penginstallan node.js ini kita tinggal next saja, lalu diakhir klik finish
   - Tes Node.js 
     untuk memastikan Node.js kita berhasil terinstal maka bukalah cmd dan ketikkan **npm -v**
+    ![img](gambar/gambar1.PNG)
     
 
 
