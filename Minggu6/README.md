@@ -117,6 +117,23 @@ Materi :
    Component memungkinkan kita membagi User Interface (UI) menjadi bagian-bagian yang independen dan dapat digunakan kembali, dan memikirkan setiap bagian secara terpisah. Secara konseptual, komponen seperti fungsi JavaScript.\
    Component dibuat jika component tersebut bersifat reusable code. Pada skala project, buatlah component jika component tersebut dibutuhkan pada section page lain
    
-   - buatlah folder baru didalam folder src
+   - buatlah folder baru didalam folder src\
        ![img](gambar/gambar8.jpg)
+     
+   - buatl file didalam components, berikan huruf besar pada awal penamaan file
+      disini saya membuat file bernama Home.js. didalamnya terdapat sebuah fungsi yang mana penamaan fungsi tersebut juga diawali dengan huruf kapital
+      ```js
+      function Home() {
+        return (
+          <div>
+            <h1>Home</h1>
+          </div>
+        )
+      }
+
+      export default Home
+      ```
+    - memanggil file Home.js di file App.js
+       ![img](gambar/gambar9.PNG)
+      
 
