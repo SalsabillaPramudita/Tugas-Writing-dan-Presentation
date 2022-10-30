@@ -138,4 +138,102 @@ Materi :
       
     - output
        ![img](gambar/gambar10.PNG)
+       
+   ### Day 2 React.js Basic - Functional Component, Props and State, Styling (CSS Stylesheet, CSS Modules & CSS-in-JS)
+   
+   - Contoh codingan sederhana dengan styling css
+   
+   file App.js
+    ```js
+   import './App.css';
+
+  function App() {
+  return (
+    <>
+
+  <div className="container">
+      <img src='https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1'
+      alt='' className='profile-img'></img>
+    
+          <div className='info-profile'>
+            <h2>Salsa</h2>
+            <h3>19 Tahun</h3>
+            <p>Peserta Front End</p>
+          </div>
+        </div>
+        </>
+      );
+    }
+
+    export default App;
+    ```
+    
+    file App.css
+     ```css
+      .profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    }
+    .info-profile{
+      margin-left: 20px;
+
+    }
+
+    .container{
+      margin-left: 100px;
+      display: flex;
+    }
+    ```
+    
+    output
+     ![img](gambar/gambar11.PNG)
+     
+     dari contoh kodingan diatas adalah contoh kasus sederhana, bagaimana kita mau menampilkan banyak data?, maka solusinya membuat component yang berisikan content data tersebut, lalu nantinya kita akan panggil dari file App.js nya.
+     
+      ![img](gambar/gambar12.PNG)
+      
+      dari gambar diatas, saya sudah membuat folder components dan file MemberInfo.jsx. berikut codingan yang ada dalam file tersebut. 
+      ```js
+      const MemberInfo= ()=>{
+    return(        
+    <div className="container">
+    <img src='https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1'
+    alt='' className='profile-img'></img>
+
+          <div className='info-profile'>
+              <h2>Salsa</h2>
+              <h3>19 Tahun</h3>
+              <p>Peserta Front End</p>
+          </div>
+          </div>
+          )
+      }
+          export default MemberInfo;
+      ```
+      codingan diatas adalah content yang kita buat pada file App.js sebelumnya. pindahkan saja codingan html yang ada App.js tadi ke MemberInfo.jsx
+      
+     berikut codingan App.js
+     ```js
+     import './App.css';
+     import MemberInfo from './components/Memberinfo';
+
+      function App() {
+        return (
+          <>
+          <MemberInfo />
+          </>
+        );
+      }
+
+      export default App;
+      ```
+      difile App.js ini kita hanya memanggil si MemberInfo.jsx yang telah kita buat tadi. part terpentingnya ada jangan lupa menyisipkan import di bagian atas codingan.
+      
+      output
+    ![img](gambar/gambar12.PNG)
+      
+
 
