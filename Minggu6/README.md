@@ -46,10 +46,23 @@ Materi :
     **create-react-app project-baru** (kita bisa mengganti "project-baru” dengan nama project yang lain)
      ![img](gambar/gambar2.PNG)
   - Jalankan Project\
-    Setelah proses pembuatan project selesai,ketikkan 
-    **cd project-baru
-      npm start**
+    Setelah proses pembuatan project selesai,ketikkan\
+    **cd project-baru\
+      npm start**\
     akan muncul halaman web yang terbuka otomatis dengan alamat localhost:3000
     ![img](gambar/gambar3.PNG)
+    
+- Virtual DOM\
+    Virtual DOM secara singkat nya adalah sebuah javascript object (virtual) yang merepresentasikan DOM yang sebenarnya (real DOM). karena virtual dom ini adalah representasi dari real dom maka virtual dom adalah sebuah replikasi (copy) dari real dom tersebut. Berbeda konsep dengan DOM, virtual dom ini memiliki konsep yaitu setiap saat perubahan terjadi di state pada aplikasi kita maka akan membuat virtual dom yang baru (cloning). Seperti terlihat pada gambar diatas, ketika ada perubahan maka virtual dom akan membuat virtual dom baru dan melakukan comparation (diffed) dari virtual dom sebelumnya. Hanya perubahan tersebut yang akan dikirim ke real dom untuk mengupdate nya. Proses seperti ini membuat virtual DOM lebih cepat dibandingkan dengan DOM, jadi tidak perlu adanya proses re-rendering lagi pada keseluruhan DOM
 
+    ![img](gambar/gambar4.png)\
+  Pada React, setiap bagian dari UI adalah component, dan setiap component mempunyai state. React menggunakan konsep Observable Pattern dan mengamati setiap perubahan pada state. Ketika state pada sebuah component berubah, react mengupadate virtual DOM tree. Setelah virtual DOM diperbarui, React kemudian membandingkan versi sekarang virtual DOM dengan versi sebelumnya. Setelah mengetahui object pada virtual DOM mana yang berubah maka hanya object tersebutlah yang akan dirubah pada real DOM. Proses seperti membuat performance aplikasi lebih baik
+  
+ - JSX\
+   JSX adalah sebuah sintaks tertanam, yang seperti XML. Ini dimaksudkan untuk diubah menjadi JavaScript yang valid, meskipun semantik dari transformasi itu khusus untuk implementasi. JSX perlu di compile untuk menjadi Javascript. Jadi sebelum ditampilkan pada browser, JSX akan dicompile menjadi javascipt terlebih dahulu. Dengan **JSX kita dapat menggunakan HTML didalam file extension (.js)**
+    ![img](gambar/gambar5.PNG)\
+  
+- Membuat Component\
+   Component memungkinkan kita membagi User Interface (UI) menjadi bagian-bagian yang independen dan dapat digunakan kembali, dan memikirkan setiap bagian secara terpisah. Secara konseptual, komponen seperti fungsi JavaScript.\
+   Component dibuat jika component tersebut bersifat reusable code. Pada skala project, buatlah component jika component tersebut dibutuhkan pada section page lain
 
