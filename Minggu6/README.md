@@ -262,7 +262,8 @@ Materi :
   ![img](gambar/gambar14.PNG)
  
  - membuat component yang dinamis dengan props dan state
- **props**
+ 
+ **props**\
  props merupakan argumen yang di-passing dari satu komponen ke komponen lain. Cara passing props sangatlah mudah, yaitu dengan menulisnya sebagai atribut pada elemen HTML. Props digunakan untuk melakukan komunikasi data antara komponen parent dan child.\
  
  contoh props
@@ -310,6 +311,33 @@ Materi :
   
   maka hasilnya seperti diabawah ini
     ![img](gambar/gambar15.PNG)
+    
+   
+ contoh stylling dengan inline css
+ ```
+  const MemberInfo= ({name, age, info, imgUrl})=>{
+
+      return(        
+      <div className="container">
+      <img src={imgUrl} alt='' className='profile-img'></img>
+
+      <div className='info-profile'>
+          <h2 style={{ color : "red" }}>{name}</h2>
+          <h3>{age}</h3>
+          <p>{info}</p>
+      </div>
+      </div>
+      )
+  }
+      export default MemberInfo;
+
+ ```
+ 
+ output 
+     ![img](gambar/gambar16.PNG)
+     
+ **useState**\
+ useState di panggil dalam function component untuk menambahkan suatu state lokal. React akan menyimpan state antar render. useState memberikan dua hal: nilai state saat ini dan fungsi untuk memperbarui nilai tersebut. Anda dapat memanggil fungsi ini dari sebuah event handler atau dimanapun
     
  
   
