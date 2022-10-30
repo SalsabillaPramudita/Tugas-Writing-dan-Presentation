@@ -136,4 +136,6 @@ Materi :
     - memanggil file Home.js di file App.js
        ![img](gambar/gambar9.PNG)
       
+    - output
+       ![img](gambar/gambar10.PNG)
 
