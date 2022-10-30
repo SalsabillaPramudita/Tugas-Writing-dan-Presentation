@@ -78,8 +78,45 @@ Materi :
    ```
    Codingan diatas akan muncul eror seperti dibawah ini
     ![img](gambar/gambar6.PNG)\
+    
+    Apabila kita ingin membuat 2 parent element atau lebih , maka solusinya bisa menggunakan tag elemen div dan tag fragment
+    - menggunakan div
+    ```js
+    import React from "react";
+
+    function App() {
+      return (
+      <div>
+        <p>hello world</p>
+        <p>Aku Salsa</p>
+      </div>
+      );
+    }
+
+    export default App;
+    ```
+    - Menggunakan tag fragment
+    ```js
+    import React from "react";
+
+    function App() {
+      return (
+      <>
+        <p>hello world</p>
+        <p>Aku Salsa</p>
+      </>
+      );
+    }
+
+    export default App;
+    ```
+    maka outputnya berhasil seperti dibawah ini
+     ![img](gambar/gambar7.PNG)
   
 - Membuat Component\
    Component memungkinkan kita membagi User Interface (UI) menjadi bagian-bagian yang independen dan dapat digunakan kembali, dan memikirkan setiap bagian secara terpisah. Secara konseptual, komponen seperti fungsi JavaScript.\
    Component dibuat jika component tersebut bersifat reusable code. Pada skala project, buatlah component jika component tersebut dibutuhkan pada section page lain
+   
+   - buatlah folder baru didalam folder src
+       ![img](gambar/gambar8.jpg)
 
