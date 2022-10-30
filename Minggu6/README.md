@@ -298,12 +298,21 @@ Materi :
         <>
         <MemberInfo name={"aca"} age={20} info={"Siswa stupen Skilvul"} imgUrl={"https://img.freepik.com/free-vector/illustration-female-character-wearing-hijab-working-office_10045-686.jpg?w=740&t=st=1667142531~exp=1667143131~hmac=7c13c7625279a79bf980b75e952aaa0aebc1c672693e13b2596cfd1ead7693e1"} />
 
+        <MemberInfo name={"adit"} age={21} info={"Siswa Akademi Polisi"} imgUrl={"https://cdn-icons-png.flaticon.com/512/1140/1140494.png?w=740&t=st=1667147325~exp=1667147925~hmac=eaf85ab253cf13ad7ceca6f4ae264c4be98341276c7881d8ed82e7e9083fc866"} />
+
         </>
       );
     }
 
     export default App;
+
   ```
+  
+  maka hasilnya seperti diabawah ini
+    ![img](gambar/gambar15.PNG)
+    
+ 
+  
   
 
 
