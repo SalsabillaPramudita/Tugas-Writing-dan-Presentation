@@ -61,6 +61,23 @@ Materi :
  - JSX\
    JSX adalah sebuah sintaks tertanam, yang seperti XML. Ini dimaksudkan untuk diubah menjadi JavaScript yang valid, meskipun semantik dari transformasi itu khusus untuk implementasi. JSX perlu di compile untuk menjadi Javascript. Jadi sebelum ditampilkan pada browser, JSX akan dicompile menjadi javascipt terlebih dahulu. Dengan **JSX kita dapat menggunakan HTML didalam file extension (.js)**
     ![img](gambar/gambar5.PNG)\
+    
+   Setiap JSX hanya bisa memiliki1 parent element
+   ```js
+   import React from "react";
+
+    function App() {
+      return (
+      <p>hello world</p>
+      <p>Aku Salsa</p>
+      );
+    }
+
+    export default App;
+
+   ```
+   Codingan diatas akan muncul eror seperti dibawah ini
+    ![img](gambar/gambar6.PNG)\
   
 - Membuat Component\
    Component memungkinkan kita membagi User Interface (UI) menjadi bagian-bagian yang independen dan dapat digunakan kembali, dan memikirkan setiap bagian secara terpisah. Secara konseptual, komponen seperti fungsi JavaScript.\
