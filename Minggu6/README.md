@@ -2,7 +2,7 @@
 
 Nama : Salsabilla Pramudita\
 Track : FrontEnd Development\
-Day 1 Front End Bootcamp
+Week 1 Front End Bootcamp
 
 Materi : 
 - Day 1 React.js Basic - JavaScript for React.js dan React.js Basic - Intro to React.js, Virtual DOM, and JSX
