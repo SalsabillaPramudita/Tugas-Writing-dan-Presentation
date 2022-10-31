@@ -507,13 +507,97 @@ Materi :
   
   Nah Navbar berhasil terpasang
   
+  - Stateless Component\
+   adalah component yang tidak memiliki state internal sendiri, melainkan data yang didapatkan oleh komponen tersebut berasal dari luar
+  - Statefull Component\
+   adalah component yang memiliki state sendiri sehingga stateful component harus menggunakan fungsi
+  
  ### Day 3 React.js Basic - Handling Events, React.js Basic - Conditional Rendering
   
-  **Handling Events**
+  **Handling Events**\
   Event React ditulis dalam sintaks camelCase:\
   onClick bukannya onclick.\
   Penangan event yang sebenarnya ditulis di dalam kurung kurawal:\
   onClick={shoot}  bukannya onClick="shoot()".
+  
+  contoh handling events
+  ```js
+  import React from 'react';
+  function Makan() {
+    const lapar = () => {
+      alert("ayo makan!");
+    }
+
+    return (
+      <button onClick={lapar}>lapar</button>
+    );
+  }
+
+  export default Makan;
+  ```
+  
+  output
+     ![img](gambar/gambar20.PNG)
+  
+  
+  **Conditional Rendering**
+  Seperti konsep conditional statement pada JavaScript atau bahasa pemrograman pada umumnya, keyword if/else digunakan untuk mengevaluasi sebuah state untuk menentukan component mana yang akan di-render.
+
+Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
+
+  ```js
+    import React, { useState } from 'react';
+
+    const Message = (props) => {
+      const { result } = props;
+
+      // conditional rendering
+      if (result) {
+        if (result == 100) {
+          return (
+            <div>
+              <h1 style={{ color: 'green' }}>Jawabanmu benar</h1>
+            </div>
+          );
+        } else {
+          return (
+            <div>
+              <h1 style={{ color: 'red' }}>Maaf, jawabanmu salah</h1>
+            </div>
+          );
+        }
+      } else {
+        return <div />;
+      }
+    };
+
+    export default function App() {
+      const [state, setState] = useState('');
+      const [result, setResult] = useState(0);
+
+      const handleChange = (e) => {
+        setState(e.target.value);
+      };
+
+      const handleClick = () => {
+        setResult(state);
+      };
+
+      return (
+        <div>
+          <p>Berapa hasil perkalian 10 x 10 ?</p>
+          <input value={state} onChange={handleChange} />
+          <button style={{ marginLeft: '1rem' }} onClick={handleClick}>
+            Cek Hasil
+          </button>
+          <Message result={result} />
+        </div>
+      );
+    }
+  ```
+  
+  output
+   ![img](gambar/gambar21.PNG)
   
   
   
