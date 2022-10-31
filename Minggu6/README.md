@@ -8,8 +8,8 @@ Materi :
 - Day 1 React.js Basic - JavaScript for React.js dan React.js Basic - Intro to React.js, Virtual DOM, and JSX
 - Day 2 React.js Basic - Functional Component, React.js Basic - Props and State,  React.js Basic - Styling (CSS Stylesheet, CSS Modules & CSS-in-JS)
 - Day 3 React.js Basic - Handling Events, React.js Basic - Conditional Rendering
-- Day 4 React.js Basic - Forms
-- Day 5 React.js Lanjutan - Lifecycle Method dan React.js Lanjutan - Hooks
+- Day 4  React.js Lanjutan - Lifecycle Method dan React.js Lanjutan - Hooks
+- Day 5 React.js Basic - Forms
 
 ### Day 1 React.js Basic - JavaScript for React.js dan Intro to React.js, Virtual DOM, and JSX
 - React.Js\
@@ -600,7 +600,71 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
    ![img](gambar/gambar21.PNG)
   
   
+  ### Day 4  React.js Lanjutan - Lifecycle Method dan React.js Lanjutan - Hooks
   
+  - Lifecycle Method
+    ![img](gambar/gambar22.PNG)
+    
+    Lifecycle pada React Native adalah aktifitas method yang dilakukan oleh React Native ketika aplikasi di jalankan
+    
+    Component — component di react js akan melewati tiga fase hidup, yaitu :
+    
+    - Mounting
+        
+       Mounting adalah fase ketika components di buat atau pertama kali di render ke DOM. Akses dan manipulasi DOM di lakukan pada method ini, operasi lain seperti request data dari API semuanya dilakukan di sini.
+       
+       contoh kodingan\
+       disini saya membuat satu buah folder component dan membuat file bernama ListDigimon.jsx
+       
+       App.js
+       ```js
+         import ListDigimon from "./components/ListDigimon";
+
+        function App(){
+          return(
+            <div className="App">
+              <ListDigimon />
+            </div>
+          )
+        }
+        export default App
+       ```
+       
+       ListDigimon.jsx
+       ```js
+        import { useEffect, useState } from "react";
+
+      function ListDigimon(){
+          const [isLoading, setIsLoading] = useState(false)
+          console.log("memanggil List Digimon");
+
+          useEffect(() => {
+              console.log("ListDigimon mount")
+          })
+
+
+          return(
+              <>
+                  <h1>Hallo</h1>
+
+                  <button onClick={() => setIsLoading(!isLoading)}>ubah loading</button>
+                  <span>{isLoading + ""}</span>
+
+              </>
+          )
+      }
+
+      export default ListDigimon
+       ```
+       disini saya memakai function useEffect. UseEffect adalah sebuah function dari react yang didalamnya disertai callback. tujuan useeffect ini untuk menambahkan kemampuan untuk melakukan “efek samping” dari sebuah function component.
+       
+       output 
+        ![img](gambar/gambar23.PNG)
+        
+        dari output diatas terdapat sebuah button yang berfungsi untuk menambahkan data(mount)
+       
+    - Updating
+    - Unmounting
 
   
   
