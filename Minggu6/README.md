@@ -634,27 +634,28 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
        ```js
         import { useEffect, useState } from "react";
 
-      function ListDigimon(){
-          const [isLoading, setIsLoading] = useState(false)
-          console.log("memanggil List Digimon");
+        function ListDigimon(){
+            const [isLoading, setIsLoading] = useState(false)
+            console.log("memanggil List Digimon");
 
-          useEffect(() => {
-              console.log("ListDigimon mount")
-          })
+            useEffect(() => {
+                console.log("ListDigimon mount")
+            }, []);
 
 
-          return(
-              <>
-                  <h1>Hallo</h1>
+            return(
+                <>
+                    <h1>Hallo</h1>
 
-                  <button onClick={() => setIsLoading(!isLoading)}>ubah loading</button>
-                  <span>{isLoading + ""}</span>
+                    <button onClick={() => setIsLoading(!isLoading)}>ubah loading</button>
+                    <span>{isLoading + ""}</span>
 
-              </>
-          )
-      }
+                </>
+            )
+        }
 
-      export default ListDigimon
+        export default ListDigimon
+
        ```
        disini saya memakai function useEffect. UseEffect adalah sebuah function dari react yang didalamnya disertai callback. tujuan useeffect ini untuk menambahkan kemampuan untuk melakukan “efek samping” dari sebuah function component.
        
@@ -663,9 +664,91 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
         
         dari output diatas terdapat sebuah button yang berfungsi untuk menambahkan data(mount)
        
-    - Updating
-    - Unmounting
+    - Updating\
+    Fase updating adalah fase ketika sebuah component akan di render ulang, biasanya ini terjadi ketika ada perubahan pada state atau props yang mengakibatkan perubahan DOM.
+    ```js
+     import { useEffect, useState } from "react";
 
+    function ListDigimon(){
+        const [isLoading, setIsLoading] = useState(false)
+        console.log("memanggil List Digimon");
+
+        useEffect(() => {
+            console.log("ListDigimon mount")
+        })
+
+
+        return(
+            <>
+                <h1>Hallo</h1>
+
+                <button onClick={() => setIsLoading(!isLoading)}>ubah loading</button>
+                <span>{isLoading + ""}</span>
+
+            </>
+        )
+    }
+
+    export default ListDigimon
+    ```
+    
+    sebenarnya codingan tersebut hampir sama dengan mount, akan tetapi di mount kita memkai kurung ski[] di useEffect nya, fungsi dari kurung siku tersebut menampilkan data sebanyak satu kali saja. di updating kita tidak memaki kurung siku karna update data terjadi secara berulang.
+    
+    output
+   ![img](gambar/gambar24.PNG)
+        
+      
+    - Unmounting
+    
+    Fase unmounting adalah fase ketika component di hapus dari DOM. Pada fase ini hanya ada satu method yang akan di eksekusi yaitu componentWillUnmount, yang di jalankan sebelum sebuah component di hapus dari DOM
+    
+ - Contoh project sederhana Life Cycle dengan API
+    ```js
+    import axios from "axios";
+    import { useEffect, useState } from "react";
+
+    function ListDigimon(){
+        const [isLoading, setIsLoading] = useState(false)
+        const [digimons, setDigimons] = useState([])
+        console.log("memanggil List Digimon");
+
+        useEffect(() => {
+            console.log("ListDigimon mount")
+            axios("https://digimon-api.vercel.app/api/digimon")
+            .then(res => {console.log(res.data)
+            setDigimons(res.data)
+            })
+        },[])
+
+        console.log(digimons)
+
+        return(
+            <>
+                <h1>Hallo</h1>
+
+                <button onClick={() => setIsLoading(!isLoading)}>ubah loading</button>
+                <span>{isLoading + ""}</span>
+
+                {digimons.map((item, index) => (
+                    <div key={index}>
+                        <img src={item.img} alt="" width={200} /> 
+                        <h2>{item.name}</h2>
+                    </div>
+
+                ))}
+
+            </>
+        )
+    }
+
+    export default ListDigimon
+    ```
+    
+    sebelumnya saya install axios. mirip seperti fetch. Axios merupakan library opensource yang digunakan untuk request data melalui http. Axios terkenal dengan keunggulannya yaitu ringan, promised-based, mendukung async dan awai untuk kode yang asinkronus.
+    
+  Output
+  ![img](gambar/gambar25.PNG)
+  
   
   
    
