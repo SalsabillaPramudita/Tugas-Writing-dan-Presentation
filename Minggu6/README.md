@@ -372,10 +372,7 @@ Materi :
  
  bisa dilihat dari gambar diaatas terdapat sebuah buttonclick yang berfungsi merubah sebuah atribut
  
- - Bootstrap di React
- ada 2 cara
-  - Memakai getbootstrap 
-  - menginstall react bootstrap
+ - Bootstrap di React 
   
  **Memakai getbootstrap**\
   
@@ -506,6 +503,22 @@ Materi :
     ```
     
   - output
+  ![img](gambar/gambar19.PNG)
+  
+  Nah Navbar berhasil terpasang
+  
+ ### Day 3 React.js Basic - Handling Events, React.js Basic - Conditional Rendering
+  
+  **Handling Events**
+  Event React ditulis dalam sintaks camelCase:\
+  onClick bukannya onclick.\
+  Penangan event yang sebenarnya ditulis di dalam kurung kurawal:\
+  onClick={shoot}  bukannya onClick="shoot()".
+  
+  
+  
+
+  
   
    
   
