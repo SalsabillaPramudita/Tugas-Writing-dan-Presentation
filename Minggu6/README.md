@@ -753,13 +753,13 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
   
   React Hooks diperkenalkan oleh React Team untuk melakukan state management dan side effects di dalam function component. Dengan Hooks kita bisa menggunakan state dan lifecycle methods tanpa harus menulis class di React.
   
-    - Perbedaan Functional Component dan Class Component
+  - Perbedaan Functional Component dan Class Component
     
     ![img](gambar/gambar26.PNG)
     
     Kedua component ini, menghasilkan hal yang sama, namun class menggunakan state, dan functional menggunakan state hooks
     
-    - Kelebihan Penggunaan Hooks
+  - Kelebihan Penggunaan Hooks
     
     Bisa dilihat dari code sebelumnya, bahwa dengan menggunakan functional component dan menggunakan hooks, maka code akan terlihat lebih clean, pendek, dan mudah dimengerti. Tim yang sudah mendevelop React pun, merekomendasikan untuk mulai menggunakan hooks karena lebih mudah dimengerti
   
