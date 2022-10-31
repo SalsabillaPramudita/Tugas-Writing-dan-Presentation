@@ -822,11 +822,11 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
   output
   ![img](gambar/gambar27.PNG)
   
-  
-   
-  
- 
-  
-  
+  - onChange
+    
+    fungsinya untuk omunikasi dengan form. mengambil data dari e.target.value
+    
+  - onSubmit
 
-
+    fungsinya untuk submit data   
+  
