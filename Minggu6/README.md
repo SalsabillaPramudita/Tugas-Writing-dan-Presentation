@@ -763,6 +763,65 @@ Untuk contohnya, saya akan membuat sebuah program pengecekan hasil perkalian
     
     Bisa dilihat dari code sebelumnya, bahwa dengan menggunakan functional component dan menggunakan hooks, maka code akan terlihat lebih clean, pendek, dan mudah dimengerti. Tim yang sudah mendevelop React pun, merekomendasikan untuk mulai menggunakan hooks karena lebih mudah dimengerti
   
+  ### Day 5 React.js Basic - Forms
+  
+  disini saya membuat sebuah contoh project form input data. disini saya punya sebuah component dengan nama file Form.jsx
+  ```js
+    import { useState } from "react";
+
+
+    const Form = () => {
+        const [name, setName] = useState("")
+        const [address, setAddress] = useState("")
+        const [data, setData] = useState({})
+        const [track, setTrack] = useState({})
+
+        // console.log(name, address, track)
+
+        const handleSubmit = (e)=>{
+            e.preventDefault();
+            setData({name, address, track})
+            // alert(`Nama: ${name}, address: ${address} `)
+            setAddress("")
+            setName("")
+            setTrack("")
+        };
+
+        return(
+        <>
+            <h1>Hallo, Aku Salsa</h1>
+
+            <form action="" onSubmit={handleSubmit}>
+                <label htmlFor="name"> Name</label>
+                <input type="text" value={ name } onChange = {(e) => setName(e.target.value)} />
+
+                <label htmlFor="address"> Address</label>
+                <input type="text" value={ address } onChange = {(e) => setAddress(e.target.value)} />
+
+                <label htmlFor="option"> Track</label>
+                <select value={track} onChange = {(e) => setTrack(e.target.value)}>
+                    <option value="">pilih track</option>
+                    <option value="FE">FE</option>
+                    <option value="BE">BE</option>
+                    <option value="UI">UI/UX</option>
+                </select>
+                <button type="submit"> Submit</button>
+            </form>
+
+            <h2>Nama : {data.name}</h2>
+            <h2>Alamat : {data.address}</h2>
+            <h2>Track : {data.track}</h2>
+
+
+        </>
+        )
+    }
+    export default Form;
+  ```
+  
+  output
+  ![img](gambar/gambar27.PNG)
+  
   
    
   
