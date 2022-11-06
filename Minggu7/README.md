@@ -62,5 +62,44 @@ Materi :
     
 dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang mana itu tidak sesuai dengan expectasi yang telah saya buat di file StudentInfo. saya menginginkan age tersebut bertipe data number. dan hasil nya seperti output diatas yang mana tidak ada pesan eror yang memberitahu kita. maka disinilah fungsi PropTypes. PropTypes berfungsi sebagai TextChecking yang mengvalidasi tipe data kita benar atau salah.
 
+- contoh proptypes di tipe data string dan number
+  disini saya menambahkan proptypes pada file studentInfo dan file app nya masi sama seperti sebelumnya
+  ```
+  import PropTypes from "prop-types"
 
+  const StudentInfo= ({name, age})=> {
+      return(
+          <>
+          <h1>Hallo, aku Salsa</h1>
+
+          <h2>{name}</h2>
+          <h2>{age+2}</h2>
+          </>
+      )
+  }
+  StudentInfo.propTypes = {
+      name : PropTypes.string,
+      age : PropTypes.number,
+
+  }
+
+  export default StudentInfo
+  ```
   
+  output
+   ![img](gambar/gambar3.PNG)
+   
+   dari output diatas sudah adanya pesan eror. yang mana si age harus bertipe data number. ini terjadi karna di file studentInfo saya memberikan proptypes kepada name dan string. maka supaya kasus ini tidak ada pesan error maka di file app, kita harus mengubah value dari si age menjadi number bukan string
+   
+   ![img](gambar/gambar4.PNG)
+   
+   maka outputnya akan seperti ini
+   
+   ![img](gambar/gambar5.PNG)
+   
+   nah disini age sudah sesuai dengan ekspektasi
+   
+   
+  
+  
+
