@@ -36,22 +36,23 @@ Materi :
     ```
     
     file app.jsx
+    
     ```
-    import StudentInfo from "./components/StudentInfo"
-    import React from "react";
+     import StudentInfo from "./components/StudentInfo"
+     import React from "react";
 
-    function App() {
+     function App() {
 
-      return (
-        <>
-          <h1>PropTypes</h1>
-          <StudentInfo name={"salsa"} age={"19"} />
-        </>
+       return (
+         <>
+           <h1>PropTypes</h1>
+           <StudentInfo name={"salsa"} age={"19"} />
+         </>
 
-      )
-    }
+       )
+     }
 
-    export default App
+     export default App
     ```
     
     output 
