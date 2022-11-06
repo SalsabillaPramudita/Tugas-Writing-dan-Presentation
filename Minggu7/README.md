@@ -157,14 +157,14 @@ dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang 
   ```
   
  - mengecek nilai dan key dari object
-  ```js
-    info: PropTypes.exact({
-       hobby: PropTypes.string,
-       class: PropTypes.number,
-     }).isRequired,
-   };
+   ```js
+     info: PropTypes.exact({
+        hobby: PropTypes.string,
+        class: PropTypes.number,
+      }).isRequired,
+    };
 
-   ```
+    ```
 
 
 
