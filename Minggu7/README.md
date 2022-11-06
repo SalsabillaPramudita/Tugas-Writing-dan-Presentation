@@ -63,8 +63,9 @@ Materi :
 dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang mana itu tidak sesuai dengan expectasi yang telah saya buat di file StudentInfo. saya menginginkan age tersebut bertipe data number. dan hasil nya seperti output diatas yang mana tidak ada pesan eror yang memberitahu kita. maka disinilah fungsi PropTypes. PropTypes berfungsi sebagai TextChecking yang mengvalidasi tipe data kita benar atau salah.
 
 - contoh proptypes di tipe data string dan number
+
   disini saya menambahkan proptypes pada file studentInfo dan file app nya masi sama seperti sebelumnya
-  ```
+  ```js
   import PropTypes from "prop-types"
 
   const StudentInfo= ({name, age})=> {
@@ -98,6 +99,75 @@ dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang 
    ![img](gambar/gambar5.PNG)
    
    nah disini age sudah sesuai dengan ekspektasi
+   
+- contoh proptypes di tipe data bebas
+  ```js
+  name: PropTypes.any.isRequired, 
+  ```
+  fungsi isRequired artinya data harus ada
+  
+- memberikan opsi untuk type data
+  ```js
+  age: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  ```
+   disini maksudnya tipe data dari si age bisa string dan bisa number
+   
+- type data array
+  ```js
+  data: PropTypes.array,
+  ```
+- mengecek value dari props
+  ```
+  data: PropTypes.arrayOf(PropTypes.number),
+  ```
+  
+- array dengan berbagai type data
+  ```
+  data: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  ```
+  
+- contoh proptypes di tipe data object 
+  ```
+  info: PropTypes.object,
+  ```
+  
+  file app.jsx
+  ```js
+  import React from "react";
+  import StudentInfo from "./components/StudentInfo";
+
+  const App = () => {
+    return (
+      <>
+        <h1>Prop Types</h1>
+        <StudentInfo name={"Salsa"} age={19} data={[1, "2"]} info={{ hobby: "menyanyi", class: 9 }} />
+      </>
+    );
+  };
+
+  export default App;
+  ```
+  
+- mengecek nilai dari object
+  ```js
+      info: PropTypes.shape({
+        hobby: PropTypes.string,
+        class: PropTypes.number,
+      }),
+  ```
+  
+ - mengecek nilai dan key dari object
+   ```js
+   info: PropTypes.exact({
+      hobby: PropTypes.string,
+      class: PropTypes.number,
+    }).isRequired,
+  };
+
+   ```
+
+
+
    
    
   
