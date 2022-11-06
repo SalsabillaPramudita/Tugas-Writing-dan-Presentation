@@ -22,7 +22,7 @@ Materi :
   
   disini saya membuat folder component dengan file bernama StudentInfo.jsx.
   
-    ```
+   ```js
       const StudentInfo= ({name, age})=> {
         return(
             <>
@@ -33,11 +33,13 @@ Materi :
             </>
         )
     }
-    ```
     
-    file app.jsx
+   ```
     
-    ```
+        
+ file app.jsx
+    
+   ```js
      import StudentInfo from "./components/StudentInfo"
      import React from "react";
 
@@ -53,10 +55,12 @@ Materi :
      }
 
      export default App
-    ```
+  ```
     
-    output 
-    ![img](gambar/gambar2.PNG)
+  output 
+  ![img](gambar/gambar2.PNG)
     
-    dari codingan di file StudentInfo saya meng
+dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang mana itu tidak sesuai dengan expectasi yang telah saya buat di file StudentInfo. saya menginginkan age tersebut bertipe data number. dan hasil nya seperti output diatas yang mana tidak ada pesan eror yang memberitahu kita. maka disinilah fungsi PropTypes. PropTypes berfungsi sebagai TextChecking yang mengvalidasi tipe data kita benar atau salah.
+
+
   
