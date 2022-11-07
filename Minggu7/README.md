@@ -520,11 +520,16 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
    
    berikut hasilnya
    
-   ![img](gambar/gambar17.PNG)
+  ![img](gambar/gambar17.PNG)
    
    disini saya ingin melihat apakah data dari state keranjang sudah ada. dan berhasil, data totalkeranjang sudah berhasil didapatkan. nilai dari totalKeranjang tersebut didapatkan dari useSelector yang memanggiil state totalKeranjang yang ada pada file redux keranjangReducer.js.
    
-   langkah selanjutnya adalah men destructuring codingan yang ada pada keranjang menjadi seperti dibawah ini. saya memasukkan totalKeranjang kedalam variabel.
+- Membuat Provider
+    fungsinya untuk memberitahu bahwa si state tersedia untuk component yang diinginkan.
+    
+    ![img](gambar/gambar18.png)
+   
+   langkah selanjutnya adalah men destructuring codingan yang ada pada file keranjang menjadi seperti dibawah ini. saya memasukkan totalKeranjang kedalam variabel.
    
    ```js
    import React from 'react'
@@ -547,6 +552,47 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
    export default Keranjang
    ```
    
+   - Membuat Action
+    saya membuat folder action didalam folder redux. didalam folder action saya membuat file baru bernama keranjangAction.js
+    
+    ![img](gambar/gambar19.png)
+    
+    file keranjangReduce.js
+     ![img](gambar/gambar20.png)
+     
+     file Counter.jsx
+       ![img](gambar/gambar21.png)
+       
+       disini saya menggunakan useDispatch(). fungsinya **useDispatch** adalah untuk mengirim action kedalam komponen. nah dari codingan diatas saya memakai useDispatch karena saya mau menampilkan data yang ada pada keranjangAction.
+       
+   tambahan untuk file riwayatPembelian
+   
+   konsepnya sama seperti pada file keranjang. yaitu tinggal kita destructur menjadi totalKeranjang. berikut kodingannya
+   ```js
+   import React from 'react'
+   import { useSelector } from 'react-redux'
+
+   function RiwayatPembelian() {
+       const {totalKeranjang} =useSelector(state => state)
+     return (
+       <div>
+           <h1>RiwayatPembelian</h1>
+
+           <h2>Jumlah Product yang dibeli ada {totalKeranjang}</h2>
+       </div>
+     )
+   }
+
+
+   export default RiwayatPembelian
+   ```
+   
+   output 
+   
+   ![img](gambar/gambar22.png)
+    
+   
+  
    
    
 
