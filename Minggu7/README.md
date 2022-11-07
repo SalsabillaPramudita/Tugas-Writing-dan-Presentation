@@ -522,7 +522,30 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
    
    ![img](gambar/gambar17.PNG)
    
-   disini saya ingin melihat apakah data dari state keranjang sudah ada. dan berhasil, data totalkeranjang sudah berhasil didapatkan
+   disini saya ingin melihat apakah data dari state keranjang sudah ada. dan berhasil, data totalkeranjang sudah berhasil didapatkan. nilai dari totalKeranjang tersebut didapatkan dari useSelector yang memanggiil state totalKeranjang yang ada pada file redux keranjangReducer.js.
+   
+   langkah selanjutnya adalah men destructuring codingan yang ada pada keranjang menjadi seperti dibawah ini. saya memasukkan totalKeranjang kedalam variabel.
+   
+   ```js
+   import React from 'react'
+   import { useSelector } from 'react-redux'
+
+   function Keranjang() {
+       const {totalKeranjang} =useSelector(state => state)
+
+   //    console.log(state)
+
+
+     return (
+       <div>
+           <span>Keranjang</span>
+           <span>{totalKeranjang}</span>
+       </div>
+     )
+   }
+
+   export default Keranjang
+   ```
    
    
    
