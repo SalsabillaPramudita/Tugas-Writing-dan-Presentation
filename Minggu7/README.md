@@ -10,6 +10,8 @@ Materi :
 
 **- Day 2 React Router 6**
 
+**- Day 3 State Management React Redux**
+
 
 ### Day 1 React. JS Lanjutan - Proptypes
  PropTypes merupakan library untuk menvalidasi props. Ini sangat membantu dalam meminimalkan bugs saat mengembangkan App besar. Jika props tidak benar type nya maka akan muncul warning.
@@ -390,28 +392,41 @@ berikut kodingan detailPage.
   berikut output dari contoh kasus ini
   
   tampilan home
-  ![img](gambar/gambar10.PNG)
   
+   ![img](gambar/gambar10.PNG)
+
   tampilan detail
+  
    ![img](gambar/gambar11.PNG)
-   
-   tampilan about(default nya aboutschool)
-    ![img](gambar/gambar12.PNG)
-    
-    tampilan child about(student)
-     ![img](gambar/gambar13.PNG)
+
+  tampilan about(default nya aboutschool)
   
+   ![img](gambar/gambar12.PNG)
+
+  tampilan child about(student)
   
+   ![img](gambar/gambar13.PNG)
    
    
+   ###  Day 3 State Management React Redux
    
+   State management library adalah library yang digunakan untuk mengelola state pada suatu aplikasi JavaScript.
    
-   
-   
-   
-   
-   
-   disini saya membuat component dengan beberapa file
+   - Mengapa harus menggunakan redux?
+   - 
+   Mengatur hubungan antara state dengan component pada React dapat dilakukan dengan hanya menggunakan state dan props. Tetapi pada aplikasi yang memilliki banyak sekali component mengelola state bisa menjadi sedikit rumit.
+
+Sebuah state bisa digunakan oleh banyak sekali component, seringkali state harus dipindah ke parent component (lifting up) agar state tersebut dapat digunakan oleh component lain.
+
+Ketika menggunakan React dengan Redux kita tidak perlu lagi memindahkan state dari satu component ke component lain, karena Redux mengubah state menjadi global state dan menempatkannya pada suatu tempat bernama store.
+
+Setiap component dapat menggunakan state yang ada di store secara langsung.
+
+Semua modifikasi state juga dilakukan melalui Redux, store pada Redux menjadi satu-satunya tempat untuk mengelola state(single source of truth).
+
+Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
+
+
  
 
 
