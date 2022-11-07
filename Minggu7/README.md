@@ -181,6 +181,7 @@ npm i react-router-dom
    ![img](gambar/gambar6.PNG)
    
 - BrowserRouter
+
   BrowserRoute adalah Langkah termudah untuk mengatur router. Yang perlu kita lakukan adalah mengimpor router spesifik yang dibutuhkan dan bungkus seluruh aplikasi di router itu.
   ```js
    import React from "react"
@@ -235,7 +236,64 @@ npm i react-router-dom
   export default App
 
   ```
+  
+  file HomePage.jsx
+  
+  ```
+   import {useNavigate, Link} from 'react-router-dom'
+
+   const HomePage = () => {
+       const navigation = useNavigate();
+       let data = [
+           {
+               id : 1,
+               nama : "aca",
+           },
+           {
+               id : 2,
+               nama : "dita",
+           },
+           {
+               id : 3,
+               nama : "adit",
+           },
+
+
+
+       ]
+
+       const handleDetail = (id) => {
+           navigation(`/detail/${id}`)
+
+       }
+
+       return (
+           <>
+           <h1>Home</h1>
+
+           {
+               data.map(el => {
+                   return(
+                       <div>
+                       <h2>Nama : {el.nama}</h2>
+                       <button onClick={() => handleDetail(el.id)}>detail</button>
+                       </div>
+
+                   )
+               })
+           }
+
+           <Link to={"about/student"}>About Student</Link>
+           <Link to={"about/teacher"}>About Teacher</Link>
+           </>
+       )
+   }
+   export default HomePage;
+   ```
    
+   nah dari kodingan diatas saya memakai UseNavigate. Apa sih UseNavigate itu?
+   **useNavigate** berfungsi untuk melakukan navigas, berpindah dari satu halaman ke halaman lain.
+
    
    
    
