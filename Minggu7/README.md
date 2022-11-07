@@ -445,6 +445,7 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
   
   
 - Membuat Store
+
   Store adalah Tempat dimana global state disimpan. analogi store ini seperti Gudang
   
   buat folder baru di dalam folder src bernama redux. dan buatlah folder store. disini saya membuat sebuah file bernama index.js
@@ -461,6 +462,7 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
   ```
   
  - Membuat Reducer
+ 
    Jika store adalah Gudang, maka reducer adalah rak nya. reducer adalah Function yang menerima object state dan object action, bertugas menentukan bagaimana suatu state diubah. Output reducer adalah state baru.
    
    disini saya membuat folder reducer didalam folder redux. saya membuat file bernama keranjangReducer.js
@@ -480,7 +482,51 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
 
    export default KeranjangReducer
  ```
+ 
+ setelah membuat reducer maka hubungkan dengan file store yang telah kita buat tadi 
+ 
+ file index.js (store)
+ 
+  ```js
+   import { createStore } from "redux"
+   import keranjangReducer from "../reducer/keranjangReducer"
+
+   const store= createStore(keranjangReducer)
+
+   export default store
+  ```
+  
+  disini saya mencoba untuk console.log di file components Keranjang.jsx
+   ```js
+   import React from 'react'
+   import { useSelector } from 'react-redux'
+
+   function Keranjang() {
+       const state = useSelector(state => state)
+
+      console.log(state)
+
+
+     return (
+       <div>
+           <span>Keranjang</span>
+           <span>0</span>
+       </div>
+     )
+   }
+
+   export default Keranjang
+   ```
    
+   berikut hasilnya
+   
+   ![img](gambar/gambar17.PNG)
+   
+   disini saya ingin melihat apakah data dari state keranjang sudah ada. dan berhasil, data totalkeranjang sudah berhasil didapatkan
+   
+   
+   
+
   
   
   
