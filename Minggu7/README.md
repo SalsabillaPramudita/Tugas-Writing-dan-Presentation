@@ -292,8 +292,22 @@ npm i react-router-dom
    ```
    
    nah dari kodingan diatas saya memakai UseNavigate. Apa sih UseNavigate itu?
+   
    **useNavigate** berfungsi untuk melakukan navigas, berpindah dari satu halaman ke halaman lain.
-
+   
+   selain itu saya juga menambahkan link untuk aboutstudent dan about teacher yang mana nantinya about tersebut akan kita jadikan child di route yang ada di app.jsx
+   
+   saya membuat file berikut untuk study kasus kali ini
+     ![img](gambar/gambar7.PNG)
+     
+     
+   output
+     ![img](gambar/gambar8.PNG)
+   
+   dari gambar tersebut link ke about student dan about teacher sudah ada, akan tetapi jika diklik, page nya masi kosong. hal ini dikarenakan kita belum menambahkan route about student dan about teacher pada app.jsx
+   
+![img](gambar/gambar9.PNG)
+   
    
    
    
@@ -303,7 +317,7 @@ npm i react-router-dom
    
    
    disini saya membuat component dengan beberapa file
-   ![img](gambar/gambar7.PNG)
+ 
 
 
 
