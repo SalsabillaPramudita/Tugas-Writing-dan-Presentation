@@ -435,11 +435,53 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
   
 **Mengkonfigurasi redux pada sebuah contoh kasus**
 
-  sebelumnya disini saya membuat 4 file komponen 
+  sebelum memakai redux disini saya membuat 4 file komponen 
   
   ![img](gambar/gambar15.PNG)
   
+  berikut outputnya 
+  
+  ![img](gambar/gambar16.PNG)
+  
+  
 - Membuat Store
+  Store adalah Tempat dimana global state disimpan. analogi store ini seperti Gudang
+  
+  buat folder baru di dalam folder src bernama redux. dan buatlah folder store. disini saya membuat sebuah file bernama index.js
+  
+  codingan index.js
+  ```js
+  import { createStore } from "redux"
+
+  const store= createStore(() => {
+
+  })
+
+  export default store
+  ```
+  
+ - Membuat Reducer
+   Jika store adalah Gudang, maka reducer adalah rak nya. reducer adalah Function yang menerima object state dan object action, bertugas menentukan bagaimana suatu state diubah. Output reducer adalah state baru.
+   
+   disini saya membuat folder reducer didalam folder redux. saya membuat file bernama keranjangReducer.js
+   
+  ```js
+   const initialState = {
+       totalKeranjang: 0
+   }
+
+   function KeranjangReducer(state = initialState, action) {
+       switch (action.type) {    
+           default: 
+
+               return state
+       }
+   }
+
+   export default KeranjangReducer
+ ```
+   
+  
   
   
 
