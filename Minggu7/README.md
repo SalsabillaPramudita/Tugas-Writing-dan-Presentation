@@ -306,7 +306,7 @@ npm i react-router-dom
    
    dari gambar tersebut link ke about student dan about teacher sudah ada, akan tetapi jika diklik, page nya masi kosong. hal ini dikarenakan kita belum menambahkan route about student dan about teacher pada app.jsx
    
-![img](gambar/gambar9.PNG)
+![img](gambar/gambar9.png)
    
    
    
