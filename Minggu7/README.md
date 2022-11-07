@@ -5,7 +5,10 @@ Track : FrontEnd Development\
 Week 2 Front End Bootcamp
 
 Materi : 
-- Day 1 React. JS Lanjutan - Proptypes
+
+**- Day 1 React. JS Lanjutan - Proptypes**
+
+**- Day 2 React Router 6**
 
 
 ### Day 1 React. JS Lanjutan - Proptypes
@@ -165,6 +168,86 @@ dari codingan di file app.jsx saya memberikan age dengan tipe data string, yang 
     };
 
     ```
+
+
+### Day 2 React Router 6
+
+Routing adalah proses di mana pengguna diarahkan ke halaman yang berbeda berdasarkan tindakan atau permintaan mereka. Router ReactJS terutama digunakan untuk mengembangkan Aplikasi Web Halaman Tunggal. React Router digunakan untuk menentukan beberapa rute dalam aplikasi. Saat pengguna mengetik URL tertentu ke browser, dan jika jalur URL ini cocok dengan ‘rute’ apa pun di dalam file router, pengguna akan diarahkan ke rute tersebut
+
+- Install React Router
+```
+npm i react-router-dom
+```
+   ![img](gambar/gambar6.PNG)
+   
+- BrowserRouter
+  BrowserRoute adalah Langkah termudah untuk mengatur router. Yang perlu kita lakukan adalah mengimpor router spesifik yang dibutuhkan dan bungkus seluruh aplikasi di router itu.
+  ```js
+   import React from "react"
+   import ReactDOM from "react-dom/client"
+   import App from "./App"
+   import { BrowserRouter } from "react-router-dom"
+
+   const root = ReactDOM.createRoot(document.getElementById("root"))
+   root.render(
+     <React.StrictMode>
+       <BrowserRouter>
+         <App />
+       </BrowserRouter>
+     </React.StrictMode>
+   )
+  ```
+ - Konfigurasi route
+  
+   untuk dapat mengkonfigurasi route kita tentunya perlu menyediakan sebuah component. contoh sederhananya saya akan membuat 3 file dikomponen bernama HomePage.jsx, AboutPage.jsx, dan DetailPage.jsx.
+   
+  codingan App.jsx
+  ```js
+  import {Routes, Route, Link} from "react-router-dom"
+  import HomePage from "./pages/HomePage"
+  import AboutPage from "./pages/AboutPage"
+  import DetailPage from "./pages/DetailPage"
+
+  const App = () => {
+
+    return (
+      <>
+      <nav>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/detail"}>Detail</Link>      
+      </nav>
+
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/detail/:id" element={<DetailPage />} />
+        <Route path="/about" element={<AboutPage />} >
+
+        </Route>  
+
+      </Routes>
+      </>
+
+    )
+  }
+
+  export default App
+
+  ```
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   disini saya membuat component dengan beberapa file
+   ![img](gambar/gambar7.PNG)
+
+
 
 
 
