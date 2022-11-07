@@ -408,12 +408,12 @@ berikut kodingan detailPage.
    ![img](gambar/gambar13.PNG)
    
    
-   ###  Day 3 State Management React Redux
+ ###  Day 3 State Management React Redux
    
    State management library adalah library yang digunakan untuk mengelola state pada suatu aplikasi JavaScript.
    
    - Mengapa harus menggunakan redux?
-   - 
+
    Mengatur hubungan antara state dengan component pada React dapat dilakukan dengan hanya menggunakan state dan props. Tetapi pada aplikasi yang memilliki banyak sekali component mengelola state bisa menjadi sedikit rumit.
 
 Sebuah state bisa digunakan oleh banyak sekali component, seringkali state harus dipindah ke parent component (lifting up) agar state tersebut dapat digunakan oleh component lain.
@@ -425,6 +425,23 @@ Setiap component dapat menggunakan state yang ada di store secara langsung.
 Semua modifikasi state juga dilakukan melalui Redux, store pada Redux menjadi satu-satunya tempat untuk mengelola state(single source of truth).
 
 Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
+
+- Install Redux
+  ```
+  npm install redux react-redux
+  ```
+  
+  ![img](gambar/gambar14.PNG)
+  
+**Mengkonfigurasi redux pada sebuah contoh kasus**
+
+  sebelumnya disini saya membuat 4 file komponen 
+  
+  ![img](gambar/gambar15.PNG)
+  
+- Membuat Store
+  
+  
 
 
  
