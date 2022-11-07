@@ -239,7 +239,7 @@ npm i react-router-dom
   
   file HomePage.jsx
   
-  ```
+  ```js
    import {useNavigate, Link} from 'react-router-dom'
 
    const HomePage = () => {
@@ -290,6 +290,7 @@ npm i react-router-dom
    }
    export default HomePage;
    ```
+   dari kodingan homepage.jsx diatas saya sudah menambahkan useNavigate, button untuk detail nama user dan link menuju file aboutstudent dan about teacher. nah saya aka membahas satu satu.
    
    nah dari kodingan diatas saya memakai UseNavigate. Apa sih UseNavigate itu?
    
@@ -307,6 +308,100 @@ npm i react-router-dom
    dari gambar tersebut link ke about student dan about teacher sudah ada, akan tetapi jika diklik, page nya masi kosong. hal ini dikarenakan kita belum menambahkan route about student dan about teacher pada app.jsx
    
 ![img](gambar/gambar9.png)
+
+pada codingan diatas saya menambahkan AboutSchool. yang mana about school ini adalah default nya. jika mengklik link about maka langsung redirect ke aboutschool. dengan menambahkan outlet pada file aboutPage.jsx
+
+  ```js
+  import {Outlet, Link} from 'react-router-dom'
+
+  const AboutPage = () => {
+      return (
+          <>
+          {/* <h1>About</h1> */}
+          <Outlet />
+
+          <Link to={"student"}>About Student </Link>
+          <Link to={"teacher"}>About Teacher </Link>
+
+          </>
+      )
+  }
+  export default AboutPage
+  ```
+  
+peran ```<Outlet/>``` mirip dengan ```<children/>```, bedanya hasil render dari ```<Outlet/>``` ini akan dinamis berdasarkan path URL yang terdaftar. dari contoh diatas, terdapat Route parent dengan path='/about' yang memiliki children dengan path='student' dan path='teacher', ```<Outlet/>``` akan merender children tersebut sebagai ```<AboutPage />``` saat akses URL-nya /student (/ sebagai parent + student sebagai children), dan akan merender ```<DashboardTasks />``` saat akses URL-nya /teacher  (/ sebagai parent + teacher sebagai children). nah pada kali ini saya memberikan aboutschool sebagai index. maka yang akan dirender ketika mengklik about adalah aboutschool.
+
+berikut kodingan detailPage.
+  ```js
+  import {useParams} from "react-router-dom"
+
+  const DetailPage = () => {
+
+      const {id} = useParams();
+      console.log(id);
+
+      const detailInfo= [
+          {
+              id : 1,
+              nama : "aca",
+              alamat : "pariaman",
+              status : "mahasiswa",
+          },
+          {
+              id : 2,
+              nama : "dita",
+              alamat : "padang",
+              status : "pelajar",
+          },
+          {
+              id : 3,
+              nama : "adit",
+              alamat : "sulawesi",
+              status : "pegawai",
+          },
+
+
+
+      ]
+      return (
+          <>
+          <h1>detail</h1>
+          {
+              detailInfo
+              .filter((el) => el.id === +id)
+              .map((el) =>{
+                  return (
+                      <div key={el.id}>
+                          <h2>Nama : {el.nama}</h2>
+                          <h2>Alamat : {el.alamat}</h2>
+                          <h2>Status : {el.status}</h2>
+                      </div>
+                  )
+              })
+          }
+          </>
+      )
+  }
+  export default DetailPage;
+  ```
+  
+  disini saya menggunakan useParams. useParamas digunakan untuk mengambil parameter rute dari komponen yang dirender oleh rute yang cocok.
+  
+  berikut output dari contoh kasus ini
+  
+  tampilan home
+  ![img](gambar/gambar10.PNG)
+  
+  tampilan detail
+   ![img](gambar/gambar11.PNG)
+   
+   tampilan about(default nya aboutschool)
+    ![img](gambar/gambar12.PNG)
+    
+    tampilan child about(student)
+     ![img](gambar/gambar13.PNG)
+  
+  
    
    
    
