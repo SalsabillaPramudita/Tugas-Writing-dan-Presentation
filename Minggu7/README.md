@@ -617,6 +617,49 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
    
    ### -Day 5 Async Actions with Middleware and Thunk
    
+   Thunk adalah konsep pemrograman yang menggunakan fungsi untuk menunda evaluasi/kalkulasi suatu operasi. 
+   
+   pada dasarnya async tidak bisa dijalankan di action. maka solusinya kita butuh midleware yang disebut Redux thunk
+   
+   Redux Thunk adalah middleware yang memungkinkan kita memanggil pembuat aksi yang mengembalikan fungsi sebagai ganti objek aksi. Fungsi itu menerima metode pengiriman penyimpanan, yang kemudian digunakan untuk mengirim aksi sinkron di dalam isi fungsi setelah operasi asinkron selesai.
+   
+  - install thunk
+  ```
+  npm install redux-thunk@2.3.0
+  ```
+   ![img](gambar/gambar23.png)
+  
+  - Menggunakan Thunk di contoh kasus TodoList
+  
+  membuat folder redux
+  
+  file store
+  
+   ![img](gambar/gambar25.png)
+   
+   
+   file action
+   
+   ![img](gambar/gambar24.png)
+    
+    file reducer
+  
+   ![img](gambar/gambar26.png)
+ 
+   provider di file main.jsx
+     
+    ![img](gambar/gambar27.png)
+      
+   component TodoList.jsx
+     
+   ![img](gambar/gambar28.png)
+      
+      
+   output
+      
+   ![img](gambar/gambar29.PNG)
+  
+   
     
    
   
