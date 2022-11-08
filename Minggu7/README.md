@@ -12,6 +12,10 @@ Materi :
 
 **- Day 3 State Management React Redux**
 
+**- Day 4 State Management Redux 2**
+
+**--Day 5 Async Actions with Middleware and Thunk**
+
 
 ### Day 1 React. JS Lanjutan - Proptypes
  PropTypes merupakan library untuk menvalidasi props. Ini sangat membantu dalam meminimalkan bugs saat mengembangkan App besar. Jika props tidak benar type nya maka akan muncul warning.
@@ -426,6 +430,7 @@ Semua modifikasi state juga dilakukan melalui Redux, store pada Redux menjadi sa
 
 Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
 
+
 - Install Redux
   ```
   npm install redux react-redux
@@ -590,6 +595,28 @@ Aplikasi menjadi lebih konsisten dan mudah untuk ditest.
    output 
    
    ![img](gambar/gambar22.png)
+   
+   
+   ### Day 4 State Management Redux 2
+   
+   - combine Reducer
+     combineReducer digunakanapabilakita mempunyai reducer lebih dari satu. beriku contoh pembuatan combine reducer
+     
+   ```js
+   import {combineReducers, createStore} from "redux"
+   import counterReducer from "../reducer/counterReducer"
+   import todolistReducer from "../reducer/todolistReducer"
+
+   const allReducer = combineReducers({
+       counter : counterReducer,
+       todo : todolistReducer
+   })
+   const store = createStore(allReducer)
+   export default store
+   ```
+   
+   ### -Day 5 Async Actions with Middleware and Thunk
+   
     
    
   
